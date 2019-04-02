@@ -1,0 +1,73 @@
+﻿@model SidebarViewModel
+
+@{
+    ViewData["Title"] = "Sidebar";
+}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+        <h1 class="govuk-heading-xl">@ViewBag.Title</h1>
+
+        <p class="govuk-body-l">
+            Course Categories.
+        </p>
+        <p class="govuk-body">
+            Select a Category:
+        </p>
+
+        <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                Sidebar
+            </legend>
+
+            @if (Model.Categories == null || !Model.Categories.Any())
+            {
+                <p><i>No results match your search</i></p>
+            }
+            else
+            {
+                <table class="govuk-table">
+                    <caption class="govuk-table__caption">Categories</caption>
+
+                    <thead class="govuk-table__head">
+                        <tr class="govuk-table__row">
+                            <th class="govuk-table__header" scope="col">
+                                @Html.LabelFor(model => model.Categories.FirstOrDefault().Name)
+                            </th>
+                            <th class="govuk-table__header" scope="col">
+                                @Html.LabelFor(model => model.Categories.FirstOrDefault().CourseCount)
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">
+                                <a asp-area="" asp-controller="Course" asp-action="Index">All</a>
+                            </td>
+                            <td class="govuk-table__cell">
+                                @{
+                                    int allCount = Model.Categories.Sum(s => s.CourseCount);
+                                }
+                                <span>@allCount</span>
+                            </td>
+                        </tr>
+
+                        @foreach (var category in Model.Categories)
+                        {
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">
+                                    <a asp-area="" asp-controller="Course" asp-action="Index" asp-route-category="@category.Name">@category.Name</a>
+                                </td>
+                                <td class="govuk-table__cell">
+                                    <span>@category.CourseCount</span>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+        </fieldset>
+
+    </div>
+</div>

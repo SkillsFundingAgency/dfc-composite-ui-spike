@@ -1,0 +1,77 @@
+﻿@model CareerIndexViewModel
+
+@{
+    ViewData["Title"] = "Careers";
+}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+        <h1 class="govuk-heading-xl">@ViewBag.Title</h1>
+
+        <p class="govuk-body-l">
+            This application samples the Careers list.
+        </p>
+        <p class="govuk-body">
+            Use this function to view the Careers sample:
+        </p>
+
+        <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                Careers
+            </legend>
+
+            @if (Model.Careers == null || !Model.Careers.Any())
+            {
+                <p><i>No results match your search</i></p>
+            }
+            else
+            {
+                <table class="govuk-table">
+                    <caption class="govuk-table__caption">Careers List</caption>
+
+                    <thead class="govuk-table__head">
+                        <tr class="govuk-table__row">
+                            <th class="govuk-table__header" scope="col">
+                                @Html.LabelFor(model => model.Careers.FirstOrDefault().Name)
+                            </th>
+                            <th class="govuk-table__header" scope="col">
+                                @Html.LabelFor(model => model.Careers.FirstOrDefault().Description)
+                            </th>
+                            <th class="govuk-table__header" scope="col">
+                                @Html.LabelFor(model => model.Careers.FirstOrDefault().City)
+                            </th>
+                            <th class="govuk-table__header" scope="col">
+                                @Html.LabelFor(model => model.Careers.FirstOrDefault().MinimumQualification)
+                            </th>
+                            <th class="govuk-table__header" scope="col">Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="govuk-table__body">
+                        @foreach (var Career in Model.Careers)
+                        {
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">
+                                <span>@Career.Name</span>
+                            </td>
+                            <td class="govuk-table__cell">
+                                <span>@Career.Description</span>
+                            </td>
+                            <td class="govuk-table__cell">
+                                <span>@Career.City</span>
+                            </td>
+                            <td class="govuk-table__cell">
+                                <span>@Career.MinimumQualification</span>
+                            </td>
+                            <td class="govuk-table__cell">
+                                @Html.ActionLink("Edit", "Edit", new { id = Career.Id }, new { @class = "govuk-link my-govuk-link" })
+                            </td>
+                        </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+        </fieldset>
+
+    </div>
+</div>

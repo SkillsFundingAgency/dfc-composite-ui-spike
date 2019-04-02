@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Navbar";
+}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+        <div class="govuk-tabs" data-module="tabs">
+            <h2 class="govuk-tabs__title">
+                Courses
+            </h2>
+
+            <ul class="govuk-tabs__list">
+                <li class="govuk-tabs__list-item">
+                    <a class="govuk-tabs__tab" asp-area="" asp-controller="Course" asp-action="Index" asp-route-filter="All">
+                        All Courses
+                    </a>
+                </li>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <li class="govuk-tabs__list-item">
+                        <a class="govuk-tabs__tab" asp-area="" asp-controller="Course" asp-action="Index" asp-route-filter="Mine">
+                            Near Me
+                        </a>
+                    </li>
+                }
+                <li class="govuk-tabs__list-item">
+                    <a class="govuk-tabs__tab" asp-area="" asp-controller="Course" asp-action="Index" asp-route-filter="ThisMonth">
+                        This Month
+                    </a>
+                </li>
+                <li class="govuk-tabs__list-item">
+                    <a class="govuk-tabs__tab" asp-area="" asp-controller="Course" asp-action="Index" asp-route-filter="NextMonth">
+                        Next Month
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

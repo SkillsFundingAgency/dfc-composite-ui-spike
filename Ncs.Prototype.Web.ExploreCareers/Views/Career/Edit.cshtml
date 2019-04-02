@@ -1,0 +1,45 @@
+﻿@model Career
+
+@{
+    ViewData["Title"] = "Edit Career";
+}
+
+@section BackButton {
+    <a asp-action="Index" class="govuk-back-link my-govuk-back-link">Back</a>
+}
+
+<form asp-action="Edit">
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(model => model.Id)
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+            <h1 class="govuk-heading-xl">@ViewBag.Title</h1>
+
+            <p class="govuk-body-l">
+                You are editing a Career.
+            </p>
+            <p class="govuk-body">
+                Edit and save the new Career details.
+            </p>
+
+            <fieldset class="govuk-fieldset">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                    Edit
+                </legend>
+
+                @Html.EditorFor(model => model.Name)
+                @Html.EditorFor(model => model.Description)
+                @Html.EditorFor(model => model.City)
+                @Html.EditorFor(model => model.MinimumQualification)
+
+            </fieldset>
+
+            <input type="submit" value="Save" class="govuk-button" />
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

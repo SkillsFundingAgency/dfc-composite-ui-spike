@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@{
+    var apps = ViewData["applications"] as List<Ncs.Prototype.Dto.ApplicationDto>;
+    if (apps != null)
+    {
+        foreach (var app in apps)
+        {
+            <p>@app.MainMenuText</p>
+        }
+    }
+    else{
+        <p>No apps registered</p>
+    }
+}

@@ -1,0 +1,71 @@
+﻿@model SkillsViewModel
+
+@{
+    ViewData["Title"] = "List Skills";
+}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+        <h1 class="govuk-heading-xl">@ViewBag.Title</h1>
+
+        <p class="govuk-body-l">
+            This application samples the Skills list.
+        </p>
+        <p class="govuk-body">
+            Use this function to view the Skills sample:
+        </p>
+
+        <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                Skills
+            </legend>
+
+            @if (Model.Skills == null || Model.Skills.Count == 0)
+            {
+                <p><i>No results match your search</i></p>
+            }
+            else
+            {
+                <table class="govuk-table">
+                    <caption class="govuk-table__caption">Skills List</caption>
+
+                    <thead class="govuk-table__head">
+                        <tr class="govuk-table__row">
+                            <th class="govuk-table__header govuk-!-width-one-quarter" scope="col">
+                                @Html.LabelFor(model => model.Skills.FirstOrDefault().Name)
+                            </th>
+                            <th class="govuk-table__header govuk-!-width-one-third" scope="col">
+                                @Html.LabelFor(model => model.Skills.FirstOrDefault().Description)
+                            </th>
+                            <th class="govuk-table__header" scope="col">
+                                @Html.LabelFor(model => model.Skills.FirstOrDefault().MinimumQualification)
+                            </th>
+                            <th class="govuk-table__header" scope="col">Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="govuk-table__body">
+                        @for (int i = 0; i < Model.Skills.Count; i++)
+                        {
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">
+                                    <span>@Model.Skills[i].Name</span>
+                                </td>
+                                <td class="govuk-table__cell">
+                                    <span>@Model.Skills[i].Description</span>
+                                </td>
+                                <td class="govuk-table__cell">
+                                    <span>@Model.Skills[i].MinimumQualification</span>
+                                </td>
+                                <td class="govuk-table__cell">
+                                    @Html.ActionLink("Edit", "Edit", new { id = Model.Skills[i].Id }, new { @class = "govuk-link my-govuk-link" })
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+        </fieldset>
+
+    </div>
+</div>

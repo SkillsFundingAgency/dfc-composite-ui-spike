@@ -1,0 +1,3 @@
+@{
+    Html.layout = Model.layout || "_layout";	
+}

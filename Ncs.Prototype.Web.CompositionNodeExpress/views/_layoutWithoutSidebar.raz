@@ -1,0 +1,25 @@
+@{
+	var branding='dark';
+	var description='Default';
+	if (Model!=null){
+		branding=Model.branding;
+		description=Model.description;
+	}
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/core/css/shell.css" rel="stylesheet" />
+    <link href="/themes/@branding/css/main.css" rel="stylesheet" />
+    <title>@description</title>
+</head>
+<body>
+	<h1>@description - _layoutWithSidebar</h1>
+	@Html.partial("_header")
+	@Html.body()
+	@Html.partial("_footer")
+</body>
+</html>

@@ -1,0 +1,15 @@
+﻿@model Ncs.Prototype.Web.Composition.ViewComponents.ApplicationNavigationMenuViewModel
+
+@foreach (var application in Model.Applications.Where(w => !string.IsNullOrEmpty(w.MainMenuText)))
+{
+    <li class="govuk-header__navigation-item">
+        @if (application.RequiresAuthorization)
+        {
+            <a class="govuk-header__link" asp-area="" asp-controller="Authorized" asp-action="Index" asp-route-applicationName="@application.Name">@application.MainMenuText</a>
+        }
+        else
+        {
+            <a class="govuk-header__link" asp-area="" asp-controller="Application" asp-action="Index" asp-route-applicationName="@application.Name">@application.MainMenuText</a>
+        }
+    </li>
+}

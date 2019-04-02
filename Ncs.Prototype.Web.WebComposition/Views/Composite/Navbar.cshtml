@@ -1,0 +1,37 @@
+﻿@using Microsoft.Extensions.Options
+@using Ncs.Prototype.Dto
+@inject IOptions<RegisteredApplicationsDto> RegisteredApplications
+
+@{
+    ViewData["Title"] = "Navbar";
+}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+        <div class="govuk-tabs" data-module="tabs">
+            <h2 class="govuk-tabs__title">
+                Composite Children Apps
+            </h2>
+
+            <ul class="govuk-tabs__list">
+                <li class="govuk-tabs__list-item">
+                    <a class="govuk-tabs__tab" asp-area="" asp-controller="Composite" asp-action="Index">Home</a>
+                </li>
+
+                @foreach (var application in RegisteredApplications.Value?.Applications.Where(w => !string.IsNullOrEmpty(w.MainMenuText)))
+                {
+                    <li class="govuk-tabs__list-item">
+                        @if (application.RequiresAuthorization)
+                        {
+                            <a class="govuk-tabs__tab" asp-area="" asp-controller="Authorized" asp-action="Index" asp-route-applicationName="@application.RouteName">@application.MainMenuText</a>
+                        }
+                        else
+                        {
+                            <a class="govuk-tabs__tab" asp-area="" asp-controller="Application" asp-action="Index" asp-route-applicationName="@application.RouteName">@application.MainMenuText</a>
+                        }
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>

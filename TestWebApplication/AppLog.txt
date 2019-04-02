@@ -1,0 +1,137 @@
+27/03/2019 13:25:29 CosmosDBHostedBackgroundService Constructor 
+27/03/2019 13:25:30 CosmosDBHostedBackgroundService ExecuteAsync 
+27/03/2019 13:25:31 Development 
+27/03/2019 13:25:32 Inside HomeController.Index 
+27/03/2019 13:25:32 CosmosDBHostedBackgroundService before StartAsync 
+27/03/2019 13:25:33 CosmosDBHostedBackgroundService after StartAsync 
+27/03/2019 13:25:34 CosmosDBObserverFactory CreateObserver 
+27/03/2019 13:25:34 CosmosDBObserver OpenAsync.0 
+27/03/2019 13:26:29 CosmosDBObserver ProcessChangesAsync 
+27/03/2019 13:26:31 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Ncs.Prototype.Web.Courses 
+27/03/2019 13:26:43 Development 
+27/03/2019 13:26:43 Inside HomeController.Index 
+27/03/2019 13:28:57 CosmosDBHostedBackgroundService Constructor 
+27/03/2019 13:28:57 CosmosDBHostedBackgroundService ExecuteAsync 
+27/03/2019 13:28:58 Development 
+27/03/2019 13:28:58 Inside HomeController.Index 
+27/03/2019 13:28:59 CosmosDBHostedBackgroundService before StartAsync 
+27/03/2019 13:29:00 CosmosDBObserverFactory CreateObserver 
+27/03/2019 13:29:00 CosmosDBObserver OpenAsync.0 
+27/03/2019 13:29:00 CosmosDBObserver ProcessChangesAsync 
+27/03/2019 13:29:00 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Ncs.Prototype.Web.Courses 
+27/03/2019 13:29:00 CosmosDBHostedBackgroundService System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\home\site\wwwroot\AppLog.txt'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.AppendAllText(String path, String contents)
+   at TestWebApplication.FileLog.DoLog(String file, String data) in D:\Clients\Esfa\Code\Ncs\Ncs.Prototype\Branches\Dev\Option2\TestWebApplication\FileLog.cs:line 26
+   at TestWebApplication.FileLog.Log(String data) in D:\Clients\Esfa\Code\Ncs\Ncs.Prototype\Branches\Dev\Option2\TestWebApplication\FileLog.cs:line 19
+   at TestWebApplication.ChangeFeedServices.CosmosDBHostedBackgroundService.Log(String data) in D:\Clients\Esfa\Code\Ncs\Ncs.Prototype\Branches\Dev\Option2\TestWebApplication\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 80
+   at TestWebApplication.ChangeFeedServices.CosmosDBHostedBackgroundService.ExecuteAsync(CancellationToken stoppingToken) in D:\Clients\Esfa\Code\Ncs\Ncs.Prototype\Branches\Dev\Option2\TestWebApplication\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 62 
+27/03/2019 13:29:14 Development 
+27/03/2019 13:29:14 Inside HomeController.Index 
+27/03/2019 13:29:15 Development 
+27/03/2019 13:29:15 Inside HomeController.Index 
+27/03/2019 13:29:35 CosmosDBObserver ProcessChangesAsync 
+27/03/2019 13:29:35 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Ncs.Prototype.Web.Courses 
+27/03/2019 13:29:37 Development 
+27/03/2019 13:29:37 Inside HomeController.Index 
+27/03/2019 13:35:19 CosmosDBHostedBackgroundService Constructor 
+27/03/2019 13:35:19 CosmosDBHostedBackgroundService ExecuteAsync 
+27/03/2019 13:35:20 Development 
+27/03/2019 13:35:20 Inside HomeController.Index 
+27/03/2019 13:35:21 CosmosDBHostedBackgroundService before StartAsync 
+27/03/2019 13:35:22 CosmosDBObserverFactory CreateObserver 
+27/03/2019 13:35:22 CosmosDBObserver OpenAsync.0 
+27/03/2019 13:35:22 CosmosDBObserver ProcessChangesAsync 
+27/03/2019 13:35:22 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Ncs.Prototype.Web.Courses 
+27/03/2019 13:35:22 CosmosDBHostedBackgroundService System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\home\site\wwwroot\AppLog.txt'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.AppendAllText(String path, String contents)
+   at TestWebApplication.FileLog.DoLog(String file, String data) in D:\Clients\Esfa\Code\Ncs\Ncs.Prototype\Branches\Dev\Option2\TestWebApplication\FileLog.cs:line 27
+   at TestWebApplication.FileLog.Log(String data) in D:\Clients\Esfa\Code\Ncs\Ncs.Prototype\Branches\Dev\Option2\TestWebApplication\FileLog.cs:line 19
+   at TestWebApplication.ChangeFeedServices.CosmosDBHostedBackgroundService.ExecuteAsync(CancellationToken stoppingToken) in D:\Clients\Esfa\Code\Ncs\Ncs.Prototype\Branches\Dev\Option2\TestWebApplication\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 64 
+27/03/2019 13:35:24 Development 
+27/03/2019 13:35:24 Inside HomeController.Index 
+27/03/2019 13:35:32 CosmosDBObserver ProcessChangesAsync 
+27/03/2019 13:35:32 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Ncs.Prototype.Web.Courses 
+27/03/2019 13:35:33 Development 
+27/03/2019 13:35:33 Inside HomeController.Index 
+27/03/2019 13:45:46 CosmosDBObserver CloseAsync.Unknown 
+27/03/2019 14:33:35 CosmosDBHostedBackgroundService Constructor 
+27/03/2019 14:33:36 CosmosDBHostedBackgroundService ExecuteAsync 
+27/03/2019 14:33:38 CosmosDBHostedBackgroundService Microsoft.Azure.Documents.DocumentClientException: Message: {"Errors":["Resource Not Found"]}
+ActivityId: 394d6eb1-4fe3-4c33-ad41-780661939043, Request URI: /apps/b2cf945e-8c59-4561-9ee8-c61e0b7c0263/services/f05b2ed8-5922-474b-b3dd-4ccdc026a2d9/partitions/5f7205ec-0516-4fbb-aeb5-4dc934b8d2b4/replicas/131978797584564278s, RequestStats: 
+RequestStartTime: 2019-03-27T14:33:39.4133261Z, RequestEndTime: 2019-03-27T14:33:39.4233195Z, Number of regions attempted: 1
+ResponseTime: 2019-03-27T14:33:39.4233195Z, StoreResult: StorePhysicalAddress: rntbd://100.72.94.172:13700/apps/b2cf945e-8c59-4561-9ee8-c61e0b7c0263/services/f05b2ed8-5922-474b-b3dd-4ccdc026a2d9/partitions/5f7205ec-0516-4fbb-aeb5-4dc934b8d2b4/replicas/131978797584564278s, LSN: 101, GlobalCommittedLsn: 101, PartitionKeyRangeId: , IsValid: True, StatusCode: 404, SubStatusCode: 0, RequestCharge: 1, ItemLSN: -1, SessionToken: -1#101, UsingLocalLSN: False, TransportException: null, ResourceType: Collection, OperationType: Read
+ResponseTime: 2019-03-27T14:33:39.4233195Z, StoreResult: StorePhysicalAddress: rntbd://100.72.93.172:13700/apps/b2cf945e-8c59-4561-9ee8-c61e0b7c0263/services/f05b2ed8-5922-474b-b3dd-4ccdc026a2d9/partitions/5f7205ec-0516-4fbb-aeb5-4dc934b8d2b4/replicas/131978878748567248s, LSN: 101, GlobalCommittedLsn: 101, PartitionKeyRangeId: , IsValid: True, StatusCode: 404, SubStatusCode: 0, RequestCharge: 1, ItemLSN: -1, SessionToken: -1#101, UsingLocalLSN: False, TransportException: null, ResourceType: Collection, OperationType: Read
+, SDK: Microsoft.Azure.Documents.Common/2.2.0.0, Windows/10.0.17134 documentdb-netcore-sdk/2.0.0
+   at Microsoft.Azure.Documents.Client.ClientExtensions.ParseResponseAsync(HttpResponseMessage responseMessage, JsonSerializerSettings serializerSettings)
+   at Microsoft.Azure.Documents.GatewayStoreModel.<>c__DisplayClass20_0.<<InvokeAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.Azure.Documents.BackoffRetryUtility`1.<>c__DisplayClass1_0.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.Azure.Documents.BackoffRetryUtility`1.ExecuteRetry(Func`1 callbackMethod, Func`3 callShouldRetry, Func`1 inBackoffAlternateCallbackMethod, TimeSpan minBackoffForInBackoffCallback, CancellationToken cancellationToken, Action`1 preRetryCallback)
+   at Microsoft.Azure.Documents.ShouldRetryResult.ThrowIfDoneTrying(ExceptionDispatchInfo capturedException)
+   at Microsoft.Azure.Documents.BackoffRetryUtility`1.ExecuteRetry(Func`1 callbackMethod, Func`3 callShouldRetry, Func`1 inBackoffAlternateCallbackMethod, TimeSpan minBackoffForInBackoffCallback, CancellationToken cancellationToken, Action`1 preRetryCallback)
+   at Microsoft.Azure.Documents.BackoffRetryUtility`1.ExecuteAsync(Func`1 callbackMethod, IRetryPolicy retryPolicy, CancellationToken cancellationToken, Action`1 preRetryCallback)
+   at Microsoft.Azure.Documents.GatewayStoreModel.InvokeAsync(DocumentServiceRequest request, ResourceType resourceType, CancellationToken cancellationToken)
+   at Microsoft.Azure.Documents.GatewayStoreModel.ProcessMessageAsync(DocumentServiceRequest request, CancellationToken cancellationToken)
+   at Microsoft.Azure.Documents.Client.DocumentClient.ReadAsync(DocumentServiceRequest request, CancellationToken cancellationToken)
+   at Microsoft.Azure.Documents.Client.DocumentClient.ReadDocumentCollectionPrivateAsync(String documentCollectionLink, RequestOptions options, IDocumentClientRetryPolicy retryPolicyInstance)
+   at Microsoft.Azure.Documents.BackoffRetryUtility`1.<>c__DisplayClass1_0.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.Azure.Documents.BackoffRetryUtility`1.ExecuteRetry(Func`1 callbackMethod, Func`3 callShouldRetry, Func`1 inBackoffAlternateCallbackMethod, TimeSpan minBackoffForInBackoffCallback, CancellationToken cancellationToken, Action`1 preRetryCallback)
+   at Microsoft.Azure.Documents.ShouldRetryResult.ThrowIfDoneTrying(ExceptionDispatchInfo capturedException)
+   at Microsoft.Azure.Documents.BackoffRetryUtility`1.ExecuteRetry(Func`1 callbackMethod, Func`3 callShouldRetry, Func`1 inBackoffAlternateCallbackMethod, TimeSpan minBackoffForInBackoffCallback, CancellationToken cancellationToken, Action`1 preRetryCallback)
+   at Microsoft.Azure.Documents.BackoffRetryUtility`1.ExecuteAsync(Func`1 callbackMethod, IRetryPolicy retryPolicy, CancellationToken cancellationToken, Action`1 preRetryCallback)
+   at Microsoft.Azure.Documents.ChangeFeedProcessor.DataAccess.ChangeFeedDocumentClient.ReadDocumentCollectionAsync(Uri documentCollectionUri, RequestOptions options)
+   at Microsoft.Azure.Documents.ChangeFeedProcessor.Utils.DocumentClientExtensions.GetDocumentCollectionAsync(IChangeFeedDocumentClient client, DocumentCollectionInfo collectionInfo)
+   at Microsoft.Azure.Documents.ChangeFeedProcessor.ChangeFeedProcessorBuilder.GetLeaseStoreManagerAsync(DocumentCollectionInfo collectionInfo, Boolean isPartitionKeyByIdRequiredIfPartitioned)
+   at Microsoft.Azure.Documents.ChangeFeedProcessor.ChangeFeedProcessorBuilder.BuildAsync()
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.ExecuteAsync(CancellationToken stoppingToken) in D:\Clients\Esfa\Code\Ncs\Ncs.Prototype\Branches\Dev\Option2\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 54 
+27/03/2019 14:55:56 CosmosDBHostedBackgroundService Constructor 
+27/03/2019 14:55:56 CosmosDBHostedBackgroundService ExecuteAsync 
+27/03/2019 14:55:57 CosmosDBHostedBackgroundService Microsoft.Azure.Documents.DocumentClientException: Message: {"Errors":["Resource Not Found"]}
+ActivityId: 953f7170-7083-45ee-ae4a-2e6f8d35b191, Request URI: /apps/b2cf945e-8c59-4561-9ee8-c61e0b7c0263/services/f05b2ed8-5922-474b-b3dd-4ccdc026a2d9/partitions/5f7205ec-0516-4fbb-aeb5-4dc934b8d2b4/replicas/131978797584564278s, RequestStats: 
+RequestStartTime: 2019-03-27T14:55:58.4736425Z, RequestEndTime: 2019-03-27T14:55:58.4736425Z, Number of regions attempted: 1
+ResponseTime: 2019-03-27T14:55:58.4736425Z, StoreResult: StorePhysicalAddress: rntbd://100.72.94.172:13700/apps/b2cf945e-8c59-4561-9ee8-c61e0b7c0263/services/f05b2ed8-5922-474b-b3dd-4ccdc026a2d9/partitions/5f7205ec-0516-4fbb-aeb5-4dc934b8d2b4/replicas/131978797584564278s, LSN: 104, GlobalCommittedLsn: 104, PartitionKeyRangeId: , IsValid: True, StatusCode: 404, SubStatusCode: 0, RequestCharge: 1, ItemLSN: -1, SessionToken: -1#104, UsingLocalLSN: False, TransportException: null, ResourceType: Collection, OperationType: Read
+ResponseTime: 2019-03-27T14:55:58.4736425Z, StoreResult: StorePhysicalAddress: rntbd://100.72.93.172:13700/apps/b2cf945e-8c59-4561-9ee8-c61e0b7c0263/services/f05b2ed8-5922-474b-b3dd-4ccdc026a2d9/partitions/5f7205ec-0516-4fbb-aeb5-4dc934b8d2b4/replicas/131978878748567248s, LSN: 104, GlobalCommittedLsn: 104, PartitionKeyRangeId: , IsValid: True, StatusCode: 404, SubStatusCode: 0, RequestCharge: 1, ItemLSN: -1, SessionToken: -1#104, UsingLocalLSN: False, TransportException: null, ResourceType: Collection, OperationType: Read
+, SDK: Microsoft.Azure.Documents.Common/2.2.0.0, Windows/10.0.17134 documentdb-netcore-sdk/2.0.0
+   at Microsoft.Azure.Documents.Client.ClientExtensions.ParseResponseAsync(HttpResponseMessage responseMessage, JsonSerializerSettings serializerSettings)
+   at Microsoft.Azure.Documents.GatewayStoreModel.<>c__DisplayClass20_0.<<InvokeAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.Azure.Documents.BackoffRetryUtility`1.<>c__DisplayClass1_0.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.Azure.Documents.BackoffRetryUtility`1.ExecuteRetry(Func`1 callbackMethod, Func`3 callShouldRetry, Func`1 inBackoffAlternateCallbackMethod, TimeSpan minBackoffForInBackoffCallback, CancellationToken cancellationToken, Action`1 preRetryCallback)
+   at Microsoft.Azure.Documents.ShouldRetryResult.ThrowIfDoneTrying(ExceptionDispatchInfo capturedException)
+   at Microsoft.Azure.Documents.BackoffRetryUtility`1.ExecuteRetry(Func`1 callbackMethod, Func`3 callShouldRetry, Func`1 inBackoffAlternateCallbackMethod, TimeSpan minBackoffForInBackoffCallback, CancellationToken cancellationToken, Action`1 preRetryCallback)
+   at Microsoft.Azure.Documents.BackoffRetryUtility`1.ExecuteAsync(Func`1 callbackMethod, IRetryPolicy retryPolicy, CancellationToken cancellationToken, Action`1 preRetryCallback)
+   at Microsoft.Azure.Documents.GatewayStoreModel.InvokeAsync(DocumentServiceRequest request, ResourceType resourceType, CancellationToken cancellationToken)
+   at Microsoft.Azure.Documents.GatewayStoreModel.ProcessMessageAsync(DocumentServiceRequest request, CancellationToken cancellationToken)
+   at Microsoft.Azure.Documents.Client.DocumentClient.ReadAsync(DocumentServiceRequest request, CancellationToken cancellationToken)
+   at Microsoft.Azure.Documents.Client.DocumentClient.ReadDocumentCollectionPrivateAsync(String documentCollectionLink, RequestOptions options, IDocumentClientRetryPolicy retryPolicyInstance)
+   at Microsoft.Azure.Documents.BackoffRetryUtility`1.<>c__DisplayClass1_0.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.Azure.Documents.BackoffRetryUtility`1.ExecuteRetry(Func`1 callbackMethod, Func`3 callShouldRetry, Func`1 inBackoffAlternateCallbackMethod, TimeSpan minBackoffForInBackoffCallback, CancellationToken cancellationToken, Action`1 preRetryCallback)
+   at Microsoft.Azure.Documents.ShouldRetryResult.ThrowIfDoneTrying(ExceptionDispatchInfo capturedException)
+   at Microsoft.Azure.Documents.BackoffRetryUtility`1.ExecuteRetry(Func`1 callbackMethod, Func`3 callShouldRetry, Func`1 inBackoffAlternateCallbackMethod, TimeSpan minBackoffForInBackoffCallback, CancellationToken cancellationToken, Action`1 preRetryCallback)
+   at Microsoft.Azure.Documents.BackoffRetryUtility`1.ExecuteAsync(Func`1 callbackMethod, IRetryPolicy retryPolicy, CancellationToken cancellationToken, Action`1 preRetryCallback)
+   at Microsoft.Azure.Documents.ChangeFeedProcessor.DataAccess.ChangeFeedDocumentClient.ReadDocumentCollectionAsync(Uri documentCollectionUri, RequestOptions options)
+   at Microsoft.Azure.Documents.ChangeFeedProcessor.Utils.DocumentClientExtensions.GetDocumentCollectionAsync(IChangeFeedDocumentClient client, DocumentCollectionInfo collectionInfo)
+   at Microsoft.Azure.Documents.ChangeFeedProcessor.ChangeFeedProcessorBuilder.GetCollectionResourceIdAsync(IChangeFeedDocumentClient documentClient, DocumentCollectionInfo collectionLocation)
+   at Microsoft.Azure.Documents.ChangeFeedProcessor.ChangeFeedProcessorBuilder.InitializeCollectionPropertiesForBuildAsync()
+   at Microsoft.Azure.Documents.ChangeFeedProcessor.ChangeFeedProcessorBuilder.BuildAsync()
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.ExecuteAsync(CancellationToken stoppingToken) in D:\Clients\Esfa\Code\Ncs\Ncs.Prototype\Branches\Dev\Option2\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 54 
+27/03/2019 15:22:16 CosmosDBHostedBackgroundService Constructor 
+27/03/2019 15:22:16 CosmosDBHostedBackgroundService ExecuteAsync 
+27/03/2019 15:22:17 CosmosDBHostedBackgroundService before StartAsync 
+27/03/2019 15:22:18 CosmosDBHostedBackgroundService after StartAsync 
+27/03/2019 15:22:18 CosmosDBObserverFactory CreateObserver 
+27/03/2019 15:22:18 CosmosDBObserver OpenAsync.0 
+27/03/2019 15:22:39 CosmosDBObserver ProcessChangesAsync 
+27/03/2019 15:22:39 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Ncs.Prototype.Web.Courses 

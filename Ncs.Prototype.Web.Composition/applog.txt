@@ -1,0 +1,218 @@
+29/03/2019 12:57:04 CosmosDBHostedBackgroundService Constructor 
+29/03/2019 12:57:04 CosmosDBHostedBackgroundService ExecuteAsync 
+29/03/2019 12:57:06 CosmosDBHostedBackgroundService before StartAsync 
+29/03/2019 12:57:08 CosmosDBObserverFactory CreateObserver 
+29/03/2019 12:57:08 CosmosDBObserver OpenAsync.0 
+29/03/2019 12:57:09 CosmosDBHostedBackgroundService after StartAsync 
+29/03/2019 12:57:19 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 12:57:19 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 12:58:02 CosmosDBHostedBackgroundService Constructor 
+29/03/2019 12:58:02 CosmosDBHostedBackgroundService ExecuteAsync 
+29/03/2019 12:58:05 CosmosDBHostedBackgroundService before StartAsync 
+29/03/2019 12:58:07 CosmosDBObserverFactory CreateObserver 
+29/03/2019 12:58:07 CosmosDBObserver OpenAsync.0 
+29/03/2019 12:58:07 CosmosDBHostedBackgroundService after StartAsync 
+29/03/2019 12:58:12 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 12:58:12 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 13:10:01 CosmosDBHostedBackgroundService Constructor 
+29/03/2019 13:10:01 CosmosDBHostedBackgroundService ExecuteAsync 
+29/03/2019 13:10:03 CosmosDBHostedBackgroundService before StartAsync 
+29/03/2019 13:10:05 CosmosDBObserverFactory CreateObserver 
+29/03/2019 13:10:05 CosmosDBObserver OpenAsync.0 
+29/03/2019 13:10:05 CosmosDBHostedBackgroundService after StartAsync 
+29/03/2019 13:23:21 CosmosDBHostedBackgroundService Constructor 
+29/03/2019 13:23:21 CosmosDBHostedBackgroundService ExecuteAsync 
+29/03/2019 13:23:23 CosmosDBHostedBackgroundService before StartAsync 
+29/03/2019 13:23:25 CosmosDBObserverFactory CreateObserver 
+29/03/2019 13:23:25 CosmosDBObserver OpenAsync.0 
+29/03/2019 13:23:25 CosmosDBHostedBackgroundService after StartAsync 
+29/03/2019 13:23:30 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:23:30 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+29/03/2019 13:23:32 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:23:32 CosmosDBObserver ProcessChangesAsync for 2 documents. Id of first is ExploreCareers 
+29/03/2019 13:23:52 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:23:52 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 13:24:10 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:24:10 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 13:25:14 CosmosDBHostedBackgroundService Constructor 
+29/03/2019 13:25:14 CosmosDBHostedBackgroundService ExecuteAsync 
+29/03/2019 13:25:17 CosmosDBHostedBackgroundService before StartAsync 
+29/03/2019 13:25:24 CosmosDBObserverFactory CreateObserver 
+29/03/2019 13:25:25 CosmosDBObserver OpenAsync.0 
+29/03/2019 13:25:25 CosmosDBHostedBackgroundService after StartAsync 
+29/03/2019 13:25:36 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:25:36 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+29/03/2019 13:25:40 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:25:40 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is ExploreCareers 
+29/03/2019 13:26:11 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:26:11 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 13:26:35 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:26:35 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 13:27:07 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:27:07 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 13:28:00 CosmosDBHostedBackgroundService Constructor 
+29/03/2019 13:28:00 CosmosDBHostedBackgroundService ExecuteAsync 
+29/03/2019 13:28:02 CosmosDBHostedBackgroundService before StartAsync 
+29/03/2019 13:28:07 CosmosDBObserverFactory CreateObserver 
+29/03/2019 13:28:07 CosmosDBObserver OpenAsync.0 
+29/03/2019 13:28:07 CosmosDBHostedBackgroundService after StartAsync 
+29/03/2019 13:28:13 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:28:13 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+29/03/2019 13:28:23 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:28:23 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+29/03/2019 13:28:26 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:28:26 CosmosDBObserver ProcessChangesAsync for 2 documents. Id of first is ExploreCareers 
+29/03/2019 13:30:17 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:30:17 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 13:37:03 CosmosDBHostedBackgroundService Constructor 
+29/03/2019 13:37:03 CosmosDBHostedBackgroundService ExecuteAsync 
+29/03/2019 13:37:40 CosmosDBHostedBackgroundService before StartAsync 
+29/03/2019 13:37:43 CosmosDBObserverFactory CreateObserver 
+29/03/2019 13:37:44 CosmosDBObserver OpenAsync.0 
+29/03/2019 13:37:45 CosmosDBHostedBackgroundService after StartAsync 
+29/03/2019 13:38:00 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:38:00 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+29/03/2019 13:38:26 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:38:26 CosmosDBObserver ProcessChangesAsync for 2 documents. Id of first is Courses 
+29/03/2019 13:38:29 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:38:29 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is SkillsHealthCheck 
+29/03/2019 13:44:48 CosmosDBHostedBackgroundService Constructor 
+29/03/2019 13:44:48 CosmosDBHostedBackgroundService ExecuteAsync 
+29/03/2019 13:44:51 CosmosDBHostedBackgroundService before StartAsync 
+29/03/2019 13:44:55 CosmosDBObserverFactory CreateObserver 
+29/03/2019 13:44:55 CosmosDBObserver OpenAsync.0 
+29/03/2019 13:44:57 CosmosDBHostedBackgroundService after StartAsync 
+29/03/2019 13:45:01 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:45:01 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+29/03/2019 13:45:16 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:45:16 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 13:45:39 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:45:39 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 13:46:11 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:46:11 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 13:46:35 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:46:35 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 13:46:58 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:46:58 CosmosDBObserver ProcessChangesAsync for 2 documents. Id of first is Courses 
+29/03/2019 13:47:03 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:47:03 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is SkillsHealthCheck 
+29/03/2019 13:47:31 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:47:31 CosmosDBObserver ProcessChangesAsync for 2 documents. Id of first is Courses 
+29/03/2019 13:47:55 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:47:55 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 13:48:15 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:48:15 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 13:48:39 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:48:39 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+29/03/2019 13:48:44 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:48:44 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is ExploreCareers 
+29/03/2019 13:49:24 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:49:24 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 13:49:42 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:49:42 CosmosDBObserver ProcessChangesAsync for 2 documents. Id of first is Courses 
+29/03/2019 13:49:46 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:49:46 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is SkillsHealthCheck 
+29/03/2019 13:50:07 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:50:07 CosmosDBObserver ProcessChangesAsync for 2 documents. Id of first is Courses 
+29/03/2019 13:50:11 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:50:11 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is SkillsHealthCheck 
+29/03/2019 13:50:37 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:50:37 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 13:50:57 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:50:57 CosmosDBObserver ProcessChangesAsync for 2 documents. Id of first is Courses 
+29/03/2019 13:51:04 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:51:04 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is SkillsHealthCheck 
+29/03/2019 13:51:09 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:51:09 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is ExploreCareers 
+29/03/2019 13:51:26 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:51:26 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 13:51:50 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:51:50 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 13:52:22 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:52:22 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 13:52:46 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:52:46 CosmosDBObserver ProcessChangesAsync for 2 documents. Id of first is Courses 
+29/03/2019 13:52:51 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:52:51 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is SkillsHealthCheck 
+29/03/2019 13:53:19 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:53:19 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 13:53:48 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:53:48 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 13:54:11 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:54:11 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 13:54:34 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:54:34 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 13:54:57 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:54:57 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 13:55:04 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:55:04 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is SkillsHealthCheck 
+29/03/2019 13:55:25 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:55:26 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 13:55:37 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:55:37 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is ExploreCareers 
+29/03/2019 13:55:55 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:55:55 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 13:56:21 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:56:21 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 13:56:48 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:56:48 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 13:57:12 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:57:12 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 13:57:36 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:57:36 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 13:58:00 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:58:01 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+29/03/2019 13:58:08 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:58:08 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is ExploreCareers 
+29/03/2019 13:58:34 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:58:34 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 13:58:57 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:58:57 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+29/03/2019 13:59:05 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:59:05 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is SkillsHealthCheck 
+29/03/2019 13:59:32 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 13:59:32 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 14:00:02 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 14:00:02 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 14:00:37 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 14:00:37 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 14:01:03 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 14:01:03 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 14:01:33 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 14:01:33 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 14:01:51 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 14:01:51 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+29/03/2019 14:01:54 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 14:01:54 CosmosDBObserver ProcessChangesAsync for 2 documents. Id of first is ExploreCareers 
+29/03/2019 14:02:15 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 14:02:15 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+29/03/2019 14:02:17 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 14:02:17 CosmosDBObserver ProcessChangesAsync for 2 documents. Id of first is ExploreCareers 
+29/03/2019 14:02:39 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 14:02:39 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+29/03/2019 14:02:42 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 14:02:42 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is ExploreCareers 
+29/03/2019 14:03:09 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 14:03:09 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 14:03:29 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 14:03:29 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 14:03:53 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 14:03:53 CosmosDBObserver ProcessChangesAsync for 2 documents. Id of first is Courses 
+29/03/2019 14:03:57 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 14:03:57 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is SkillsHealthCheck 
+29/03/2019 14:04:23 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 14:04:23 CosmosDBObserver ProcessChangesAsync for 2 documents. Id of first is Courses 
+29/03/2019 14:04:30 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 14:04:30 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is SkillsHealthCheck 
+29/03/2019 14:04:57 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 14:04:57 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 14:05:19 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 14:05:19 CosmosDBObserver ProcessChangesAsync for 2 documents. Id of first is Courses 
+29/03/2019 14:05:25 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 14:05:25 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is SkillsHealthCheck 
+29/03/2019 14:05:46 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 14:05:46 CosmosDBObserver ProcessChangesAsync for 3 documents. Id of first is Courses 
+29/03/2019 14:06:12 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 14:06:12 CosmosDBObserver ProcessChangesAsync for 2 documents. Id of first is Courses 
+29/03/2019 14:06:16 CosmosDBObserver ProcessChangesAsync 
+29/03/2019 14:06:16 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is SkillsHealthCheck 

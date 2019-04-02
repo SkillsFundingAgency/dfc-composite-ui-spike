@@ -1,0 +1,33 @@
+﻿@model Ncs.Prototype.Web.Composition.ViewComponents.ListApplicationsViewModel
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+        <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            </legend>
+
+            <dl class="govuk-summary-list">
+                @foreach (var application in Model.Applications.Where(w => !string.IsNullOrEmpty(w.MainMenuText)))
+                {
+                    <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">
+                            @application.Description
+                        </dt>
+                        <dd class="govuk-summary-list__value">
+                            @if (application.RequiresAuthorization)
+                            {
+                                <a class="govuk-link my-govuk-link" href="~/Authorized/Index?ApplicationName=@application.Name">@application.MainMenuText</a>
+                            }
+                            else
+                            {
+                                <a class="govuk-link my-govuk-link" href="~/Application/Index?ApplicationName=@application.Name">@application.MainMenuText</a>
+                            }
+                        </dd>
+                    </div>
+                }
+            </dl>
+
+        </fieldset>
+    </div>
+</div>
+

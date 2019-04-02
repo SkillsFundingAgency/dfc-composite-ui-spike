@@ -1,0 +1,37 @@
+﻿@model IEnumerable<PartViewModel>
+
+@if (Model == null || !Model.Any())
+{
+    <p><i>No results match your search</i></p>
+}
+else
+{
+    <table class="govuk-table">
+        <caption class="govuk-table__caption">Parts List</caption>
+
+        <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="col">
+                    @Html.LabelFor(model => model.FirstOrDefault().Name)
+                </th>
+                <th class="govuk-table__header" scope="col">
+                    @Html.LabelFor(model => model.FirstOrDefault().Description)
+                </th>
+            </tr>
+        </thead>
+
+        <tbody class="govuk-table__body">
+            @foreach (var part in Model)
+            {
+                <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">
+                        <span>@part.Name</span>
+                    </td>
+                    <td class="govuk-table__cell">
+                        <span>@part.Description</span>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

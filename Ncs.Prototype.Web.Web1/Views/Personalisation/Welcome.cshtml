@@ -1,0 +1,39 @@
+﻿@using System.Security.Claims
+
+@{
+    ViewData["Title"] = "Personalisation";
+}
+
+@if (User.Identity.IsAuthenticated)
+{
+
+    string userName = User.Identity.Name;
+    string emailAddress = null;
+
+    if (userName == null)
+    {
+        if (User.HasClaim(c => c.Type == ClaimTypes.Name))
+        {
+            userName = User.Claims.First(c => c.Type == ClaimTypes.Name).Value;
+        }
+        else if (User.HasClaim(c => c.Type == "name"))
+        {
+            userName = User.Claims.First(c => c.Type == "name").Value;
+        }
+    }
+    if (User.HasClaim(c => c.Type == ClaimTypes.Email))
+    {
+        emailAddress = User.Claims.First(c => c.Type == ClaimTypes.Email).Value;
+    }
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+            <h1 class="govuk-heading-xl">Welcome</h1>
+
+            <p class="govuk-body-l">
+                Hello @userName (@emailAddress).
+            </p>
+
+        </div>
+    </div>
+}

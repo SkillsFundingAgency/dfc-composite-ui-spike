@@ -1,0 +1,83 @@
+﻿@model TradeIndexViewModel
+
+@{
+    ViewData["Title"] = "Trades";
+}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+        <h1 class="govuk-heading-xl">@ViewBag.Title</h1>
+
+        <p class="govuk-body-l">
+            This application samples the trades list.
+        </p>
+        <p class="govuk-body">
+            Use this function to view the trades sample:
+        </p>
+
+        <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                Trades
+            </legend>
+
+            @if (Model.Trades == null || !Model.Trades.Any())
+            {
+                <p><i>No results match your search</i></p>
+            }
+            else
+            {
+                <table class="govuk-table">
+                    <caption class="govuk-table__caption">Trades List</caption>
+
+                    <thead class="govuk-table__head">
+                        <tr class="govuk-table__row">
+                            <th class="govuk-table__header" scope="col">
+                                @Html.LabelFor(model => model.Trades.FirstOrDefault().Title)
+                            </th>
+                            <th class="govuk-table__header" scope="col">
+                                @Html.LabelFor(model => model.Trades.FirstOrDefault().Description)
+                            </th>
+                            <th class="govuk-table__header" scope="col">
+                                @Html.LabelFor(model => model.Trades.FirstOrDefault().City)
+                            </th>
+                            <th class="govuk-table__header" scope="col">
+                                @Html.LabelFor(model => model.Trades.FirstOrDefault().MinimumAge)
+                            </th>
+                            <th class="govuk-table__header" scope="col">
+                                @Html.LabelFor(model => model.Trades.FirstOrDefault().Category)
+                            </th>
+                            <th class="govuk-table__header" scope="col">Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="govuk-table__body">
+                        @foreach (var trade in Model.Trades)
+                        {
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">
+                                <span>@trade.Title</span>
+                            </td>
+                            <td class="govuk-table__cell">
+                                <span>@trade.Description</span>
+                            </td>
+                            <td class="govuk-table__cell">
+                                <span>@trade.City</span>
+                            </td>
+                            <td class="govuk-table__cell">
+                                <span>@trade.MinimumAge</span>
+                            </td>
+                            <td class="govuk-table__cell">
+                                <span>@trade.Category</span>
+                            </td>
+                            <td class="govuk-table__cell">
+                                @Html.ActionLink("Edit", "Edit", new { id = trade.Id }, new { @class = "govuk-link my-govuk-link" })
+                            </td>
+                        </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+        </fieldset>
+
+    </div>
+</div>

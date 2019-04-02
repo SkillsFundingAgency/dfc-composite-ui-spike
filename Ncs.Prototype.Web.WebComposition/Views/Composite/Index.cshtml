@@ -1,0 +1,54 @@
+﻿@using Microsoft.Extensions.Options
+@using Ncs.Prototype.Dto
+@inject IOptions<RegisteredApplicationsDto> RegisteredApplications
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+        <h1 class="govuk-heading-xl">@ViewBag.Title</h1>
+
+        <p class="govuk-body-l">
+            Composite Child UI Application.
+        </p>
+        <p class="govuk-body">
+            Select from the following Composite Child applications.
+        </p>
+    </div>
+</div>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+        <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                Composite Child Apps
+            </legend>
+
+            <dl class="govuk-summary-list">
+                @foreach (var application in RegisteredApplications.Value?.Applications.Where(w => !string.IsNullOrEmpty(w.MainMenuText)))
+                {
+                    <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">
+                            @application.Description
+                        </dt>
+                        <dd class="govuk-summary-list__value">
+                            @if (application.RequiresAuthorization)
+                            {
+                                <a class="govuk-link my-govuk-link" asp-area="" asp-controller="Authorized" asp-action="Index" asp-route-applicationName="@application.RouteName">@application.MainMenuText</a>
+                            }
+                            else
+                            {
+                                <a class="govuk-link my-govuk-link" asp-area="" asp-controller="Application" asp-action="Index" asp-route-applicationName="@application.RouteName">@application.MainMenuText</a>
+                            }
+                        </dd>
+                    </div>
+                }
+            </dl>
+
+        </fieldset>
+    </div>
+</div>
+
+

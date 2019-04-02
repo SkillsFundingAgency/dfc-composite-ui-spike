@@ -1,0 +1,50 @@
+﻿<div class="govuk-width-container">
+    @if (IsSectionDefined("AppNavBar"))
+    {
+        <div class="CompositeChildRegion">
+            @RenderSection("AppNavBar", required: false)
+        </div>
+    }
+
+    @if (IsSectionDefined("Breadcrumbs"))
+    {
+        <div class="CompositeChildRegion">
+            @RenderSection("Breadcrumbs", required: false)
+        </div>
+    }
+    @if (IsSectionDefined("Personalisation"))
+    {
+        if (User.Identity.IsAuthenticated)
+        {
+            <div class="CompositeChildRegion">
+                @RenderSection("Personalisation", required: false)
+            </div>
+        }
+        else
+        {
+            IgnoreSection("Personalisation");
+        }
+    }
+
+    @if (IsSectionDefined("BackButton"))
+    {
+        <div class="CompositeChildRegion">
+            @RenderSection("BackButton", required: false)
+        </div>
+    }
+
+    <partial name="_ErrorSummary" />
+
+    @if (IsSectionDefined("AppSideBar"))
+    {
+        IgnoreSection("AppSideBar");
+    }
+
+    @if (IsSectionDefined("Application"))
+    {
+        <div class="CompositeChildRegion CompositeChildRegionScrollX">
+            @RenderSection("Application", required: false)
+        </div>
+    }
+
+</div>

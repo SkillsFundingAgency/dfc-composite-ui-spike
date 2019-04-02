@@ -1,0 +1,1 @@
+﻿@Html.raw(Model.applicationHtml)

@@ -1,0 +1,54 @@
+﻿@model PartIndexViewModel
+
+@{
+    ViewData["Title"] = "WebAPI Parts";
+}
+
+<h1 class="govuk-heading-xl">@ViewBag.Title</h1>
+
+<p class="govuk-body-l">
+    This application samples the WebAPI.
+</p>
+<p class="govuk-body">
+    Use this function to view the webAPI Parts sample:
+</p>
+
+<fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+        Parts (Json)
+    </legend>
+
+    <partial name="_IndexParts" model="Model.Parts" />
+</fieldset>
+
+<fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+        Parts Authorized (Json)
+    </legend>
+
+    @if (User.Identity.IsAuthenticated)
+    {
+        <partial name="_IndexParts" model="Model.PartsAuthorized" />
+    }
+    else
+    {
+        <partial name="_Unauthroized" />
+    }
+</fieldset>
+
+<fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+        Parts (HTML)
+    </legend>
+
+    @Html.Raw(Model.HtmlParts)
+</fieldset>
+
+<fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+        Parts (XML)
+    </legend>
+
+    <partial name="_IndexParts" model="Model.XmlParts" />
+</fieldset>
+

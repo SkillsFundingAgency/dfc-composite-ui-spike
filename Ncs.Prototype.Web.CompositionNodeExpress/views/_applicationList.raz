@@ -1,0 +1,13 @@
+<nav>
+<ul id="navigation" class="govuk-header__navigation " aria-label="Top Level Navigation">
+  @{
+  if (Model.applications!=null){
+  Model.applications.forEach(function(x) {
+  <li class="govuk-header__navigation-item">
+				<a class="govuk-header__link"  href="/application/renderEntryPoint/@x.id">@x.description</a>
+			</li>
+		});
+	}
+}
+</ul>
+</nav>

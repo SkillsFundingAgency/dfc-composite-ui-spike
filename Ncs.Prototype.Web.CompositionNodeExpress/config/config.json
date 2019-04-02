@@ -1,0 +1,76 @@
+{
+  "exclude": [
+    "**/bin",
+    "**/bower_components",
+    "**/jspm_packages",
+    "**/node_modules",
+    "**/obj",
+    "**/platforms"
+  ],
+  "google": {
+    "expiresIn": "1 minute",
+    "issuer": "https://accounts.google.com/",
+    "clientId": "1090535728028-n7pjl6389dp1oq5mprv91r51ct4lce6o.apps.googleusercontent.com",
+    "clientSecret": "6Q6o7nc5z3CP8xIGU8kha2Ge",
+    "callbackURL": "http://localhost:1337/auth/google/callback"
+  },
+  "applications": [
+    {
+      "id": 1,
+      "title": "Courses",
+      "description": "Courses",
+      "mainMenuText": "Courses",
+      "routeName": "Course",
+      "layout": "_layoutWithoutSideBar.raz",
+      "showSideBar": true,
+      "branding": "dark",
+      "requiresAuthorization": false,
+      "rootUrl": "https://localhost:44318",
+      "heakthCheckUrl": "https://localhost:44318/ready",
+      "entrypointUrl": "https://localhost:44318/Course?filter=Mine",
+      "sidebarUrl": "https://localhost:44318/Course/Sidebar",
+      "appNavBarUrl": "https://localhost:44318/Course/Navbar",
+      "breadcrumbsUrl": "",
+      "personalisationUrl": "https://localhost:44318/Personalisation/Welcome",
+      "backButtonUrl": ""
+    },
+    {
+      "id": 2,
+      "title": "Skills Health Check",
+      "description": "Skills Health Check",
+      "mainMenuText": "Skills",
+      "routeName": "Skill",
+      "layout": "_layoutWithoutSideBar.raz",
+      "showSideBar": false,
+      "branding": "light",
+      "requiresAuthorization": false,
+      "rootUrl": "",
+      "heakthCheckUrl": "",
+      "entrypointUrl": "",
+      "sidebarUrl": "",
+      "appNavBarUrl": "",
+      "breadcrumbsUrl": "",
+      "personalisationUrl": "",
+      "backButtonUrl": ""
+    },
+    {
+      "id": 3,
+      "title": "Explore Careers",
+      "description": "Explore Careers",
+      "mainMenuText": "Explore Careers",
+      "routeName": "Career",
+      "layout": "_layoutWithSideBar.raz",
+      "showSideBar": true,
+      "branding": "ESFA",
+      "requiresAuthorization": true,
+      "rootUrl": "",
+      "heakthCheckUrl": "",
+      "entrypointUrl": "",
+      "sidebarUrl": "",
+      "appNavBarUrl": "",
+      "breadcrumbsUrl": "",
+      "personalisationUrl": "",
+      "backButtonUrl": ""
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ncs.Prototype.Web.Composition", "Ncs.Prototype.Web.Composition\Ncs.Prototype.Web.Composition.csproj", "{7649E6D4-4570-42A9-BB65-CE5534891B01}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ncs.Prototype.Interfaces", "Ncs.Prototype.Interfaces\Ncs.Prototype.Interfaces.csproj", "{92295B77-F38A-48CA-B3EA-F645D9BA3EEA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ncs.Prototype.Web.SkillsHealthCheck", "Ncs.Prototype.Web.SkillsHealthCheck\Ncs.Prototype.Web.SkillsHealthCheck.csproj", "{7159E5FD-07DE-4605-A5E5-6FE791508F7C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ncs.Prototype.Web.Courses", "Ncs.Prototype.Web.Courses\Ncs.Prototype.Web.Courses.csproj", "{717E10B5-6269-4749-99A8-7225130CDA0C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ncs.Prototype.Dto", "Ncs.Prototype.Dto\Ncs.Prototype.Dto.csproj", "{AECE85A6-E941-465E-AFBD-C97F98970A94}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Ncs.Prototype.Web.CompositionNodeExpress", "Ncs.Prototype.Web.CompositionNodeExpress\Ncs.Prototype.Web.CompositionNodeExpress.njsproj", "{27C8AC71-414F-4B30-84FA-EBC25CDF47B9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ncs.Prototype.Web.Web1", "Ncs.Prototype.Web.Web1\Ncs.Prototype.Web.Web1.csproj", "{BA170078-3428-4950-ABF3-597EBD3AB2E7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ncs.Prototype.Web.Web2", "Ncs.Prototype.Web.Web2\Ncs.Prototype.Web.Web2.csproj", "{983FBD4F-F55F-4767-8703-135E40CDDA7B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ncs.Prototype.Web.WebComposition", "Ncs.Prototype.Web.WebComposition\Ncs.Prototype.Web.WebComposition.csproj", "{278C43CD-B110-4E63-8137-27BD82A93F77}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ncs.Prototype.Web.Web3", "Ncs.Prototype.Web.Web3\Ncs.Prototype.Web.Web3.csproj", "{FE416632-B9B2-44E0-90C5-EDEDBB3DBC98}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ncs.Prototype.Web.Api", "Ncs.Prototype.Web.Api\Ncs.Prototype.Web.Api.csproj", "{C69197AF-7AF1-4D03-9DD5-4D7E39B419D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{86E352FD-03DE-47F5-A96F-37F019F20B89}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{D580E016-7E3F-4C52-AA16-CB6E025BAC72}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ncs.Prototype.Web.ApplicationManagement", "Ncs.Prototype.Web.ApplicationManagement\Ncs.Prototype.Web.ApplicationManagement.csproj", "{5023452A-F01C-4901-820F-15D69AAC4AE2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ncs.Prototype.Common", "Ncs.Prototype.Common\Ncs.Prototype.Common.csproj", "{15B7C642-1603-425C-8372-3138451728A8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ncs.Prototype.Common.Services", "Ncs.Prototype.Common.Services\Ncs.Prototype.Common.Services.csproj", "{235C2F86-BF03-4A9E-BDE9-E3C86228EDF5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ncs.Prototype.Web.ExploreCareers", "Ncs.Prototype.Web.ExploreCareers\Ncs.Prototype.Web.ExploreCareers.csproj", "{FA2EC676-F744-4B53-9032-C9363403711A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWebApplication", "TestWebApplication\TestWebApplication.csproj", "{8E21BEB6-7AF3-49C8-8753-B96470A3D550}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7649E6D4-4570-42A9-BB65-CE5534891B01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7649E6D4-4570-42A9-BB65-CE5534891B01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7649E6D4-4570-42A9-BB65-CE5534891B01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7649E6D4-4570-42A9-BB65-CE5534891B01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92295B77-F38A-48CA-B3EA-F645D9BA3EEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92295B77-F38A-48CA-B3EA-F645D9BA3EEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92295B77-F38A-48CA-B3EA-F645D9BA3EEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92295B77-F38A-48CA-B3EA-F645D9BA3EEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7159E5FD-07DE-4605-A5E5-6FE791508F7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7159E5FD-07DE-4605-A5E5-6FE791508F7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7159E5FD-07DE-4605-A5E5-6FE791508F7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7159E5FD-07DE-4605-A5E5-6FE791508F7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{717E10B5-6269-4749-99A8-7225130CDA0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{717E10B5-6269-4749-99A8-7225130CDA0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{717E10B5-6269-4749-99A8-7225130CDA0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{717E10B5-6269-4749-99A8-7225130CDA0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AECE85A6-E941-465E-AFBD-C97F98970A94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AECE85A6-E941-465E-AFBD-C97F98970A94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AECE85A6-E941-465E-AFBD-C97F98970A94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AECE85A6-E941-465E-AFBD-C97F98970A94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27C8AC71-414F-4B30-84FA-EBC25CDF47B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27C8AC71-414F-4B30-84FA-EBC25CDF47B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27C8AC71-414F-4B30-84FA-EBC25CDF47B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27C8AC71-414F-4B30-84FA-EBC25CDF47B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA170078-3428-4950-ABF3-597EBD3AB2E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA170078-3428-4950-ABF3-597EBD3AB2E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA170078-3428-4950-ABF3-597EBD3AB2E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA170078-3428-4950-ABF3-597EBD3AB2E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{983FBD4F-F55F-4767-8703-135E40CDDA7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{983FBD4F-F55F-4767-8703-135E40CDDA7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{983FBD4F-F55F-4767-8703-135E40CDDA7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{983FBD4F-F55F-4767-8703-135E40CDDA7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{278C43CD-B110-4E63-8137-27BD82A93F77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{278C43CD-B110-4E63-8137-27BD82A93F77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{278C43CD-B110-4E63-8137-27BD82A93F77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{278C43CD-B110-4E63-8137-27BD82A93F77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE416632-B9B2-44E0-90C5-EDEDBB3DBC98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE416632-B9B2-44E0-90C5-EDEDBB3DBC98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE416632-B9B2-44E0-90C5-EDEDBB3DBC98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE416632-B9B2-44E0-90C5-EDEDBB3DBC98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C69197AF-7AF1-4D03-9DD5-4D7E39B419D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C69197AF-7AF1-4D03-9DD5-4D7E39B419D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C69197AF-7AF1-4D03-9DD5-4D7E39B419D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C69197AF-7AF1-4D03-9DD5-4D7E39B419D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5023452A-F01C-4901-820F-15D69AAC4AE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5023452A-F01C-4901-820F-15D69AAC4AE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5023452A-F01C-4901-820F-15D69AAC4AE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5023452A-F01C-4901-820F-15D69AAC4AE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15B7C642-1603-425C-8372-3138451728A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15B7C642-1603-425C-8372-3138451728A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15B7C642-1603-425C-8372-3138451728A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15B7C642-1603-425C-8372-3138451728A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{235C2F86-BF03-4A9E-BDE9-E3C86228EDF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{235C2F86-BF03-4A9E-BDE9-E3C86228EDF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{235C2F86-BF03-4A9E-BDE9-E3C86228EDF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{235C2F86-BF03-4A9E-BDE9-E3C86228EDF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA2EC676-F744-4B53-9032-C9363403711A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA2EC676-F744-4B53-9032-C9363403711A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA2EC676-F744-4B53-9032-C9363403711A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA2EC676-F744-4B53-9032-C9363403711A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E21BEB6-7AF3-49C8-8753-B96470A3D550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E21BEB6-7AF3-49C8-8753-B96470A3D550}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E21BEB6-7AF3-49C8-8753-B96470A3D550}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E21BEB6-7AF3-49C8-8753-B96470A3D550}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7649E6D4-4570-42A9-BB65-CE5534891B01} = {86E352FD-03DE-47F5-A96F-37F019F20B89}
+		{92295B77-F38A-48CA-B3EA-F645D9BA3EEA} = {D580E016-7E3F-4C52-AA16-CB6E025BAC72}
+		{7159E5FD-07DE-4605-A5E5-6FE791508F7C} = {86E352FD-03DE-47F5-A96F-37F019F20B89}
+		{717E10B5-6269-4749-99A8-7225130CDA0C} = {86E352FD-03DE-47F5-A96F-37F019F20B89}
+		{AECE85A6-E941-465E-AFBD-C97F98970A94} = {D580E016-7E3F-4C52-AA16-CB6E025BAC72}
+		{27C8AC71-414F-4B30-84FA-EBC25CDF47B9} = {86E352FD-03DE-47F5-A96F-37F019F20B89}
+		{BA170078-3428-4950-ABF3-597EBD3AB2E7} = {86E352FD-03DE-47F5-A96F-37F019F20B89}
+		{983FBD4F-F55F-4767-8703-135E40CDDA7B} = {86E352FD-03DE-47F5-A96F-37F019F20B89}
+		{278C43CD-B110-4E63-8137-27BD82A93F77} = {86E352FD-03DE-47F5-A96F-37F019F20B89}
+		{FE416632-B9B2-44E0-90C5-EDEDBB3DBC98} = {86E352FD-03DE-47F5-A96F-37F019F20B89}
+		{C69197AF-7AF1-4D03-9DD5-4D7E39B419D5} = {86E352FD-03DE-47F5-A96F-37F019F20B89}
+		{5023452A-F01C-4901-820F-15D69AAC4AE2} = {86E352FD-03DE-47F5-A96F-37F019F20B89}
+		{15B7C642-1603-425C-8372-3138451728A8} = {D580E016-7E3F-4C52-AA16-CB6E025BAC72}
+		{235C2F86-BF03-4A9E-BDE9-E3C86228EDF5} = {D580E016-7E3F-4C52-AA16-CB6E025BAC72}
+		{FA2EC676-F744-4B53-9032-C9363403711A} = {86E352FD-03DE-47F5-A96F-37F019F20B89}
+		{8E21BEB6-7AF3-49C8-8753-B96470A3D550} = {86E352FD-03DE-47F5-A96F-37F019F20B89}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DFF42B3A-B5B8-4EA9-B59D-FD72610DCBBE}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 17
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://ilyasdhin.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Ncs.Prototype.Web.Composition\\Ncs.Prototype.Web.Composition.csproj
+		SccProjectTopLevelParentUniqueName1 = Ncs.Prototype.Option2.sln
+		SccProjectName1 = Ncs.Prototype.Web.Composition
+		SccLocalPath1 = Ncs.Prototype.Web.Composition
+		SccProjectUniqueName2 = Ncs.Prototype.Interfaces\\Ncs.Prototype.Interfaces.csproj
+		SccProjectTopLevelParentUniqueName2 = Ncs.Prototype.Option2.sln
+		SccProjectName2 = Ncs.Prototype.Interfaces
+		SccLocalPath2 = Ncs.Prototype.Interfaces
+		SccProjectUniqueName3 = Ncs.Prototype.Web.SkillsHealthCheck\\Ncs.Prototype.Web.SkillsHealthCheck.csproj
+		SccProjectTopLevelParentUniqueName3 = Ncs.Prototype.Option2.sln
+		SccProjectName3 = Ncs.Prototype.Web.SkillsHealthCheck
+		SccLocalPath3 = Ncs.Prototype.Web.SkillsHealthCheck
+		SccProjectUniqueName4 = Ncs.Prototype.Web.Courses\\Ncs.Prototype.Web.Courses.csproj
+		SccProjectTopLevelParentUniqueName4 = Ncs.Prototype.Option2.sln
+		SccProjectName4 = Ncs.Prototype.Web.Courses
+		SccLocalPath4 = Ncs.Prototype.Web.Courses
+		SccProjectUniqueName5 = Ncs.Prototype.Dto\\Ncs.Prototype.Dto.csproj
+		SccProjectTopLevelParentUniqueName5 = Ncs.Prototype.Option2.sln
+		SccProjectName5 = Ncs.Prototype.Dto
+		SccLocalPath5 = Ncs.Prototype.Dto
+		SccProjectUniqueName6 = Ncs.Prototype.Web.CompositionNodeExpress\\Ncs.Prototype.Web.CompositionNodeExpress.njsproj
+		SccProjectTopLevelParentUniqueName6 = Ncs.Prototype.Option2.sln
+		SccProjectName6 = Ncs.Prototype.Web.CompositionNodeExpress
+		SccLocalPath6 = Ncs.Prototype.Web.CompositionNodeExpress
+		SccProjectUniqueName7 = Ncs.Prototype.Web.Web1\\Ncs.Prototype.Web.Web1.csproj
+		SccProjectTopLevelParentUniqueName7 = Ncs.Prototype.Option2.sln
+		SccProjectName7 = Ncs.Prototype.Web.Web1
+		SccLocalPath7 = Ncs.Prototype.Web.Web1
+		SccProjectUniqueName8 = Ncs.Prototype.Web.Web2\\Ncs.Prototype.Web.Web2.csproj
+		SccProjectTopLevelParentUniqueName8 = Ncs.Prototype.Option2.sln
+		SccProjectName8 = Ncs.Prototype.Web.Web2
+		SccLocalPath8 = Ncs.Prototype.Web.Web2
+		SccProjectUniqueName9 = Ncs.Prototype.Web.WebComposition\\Ncs.Prototype.Web.WebComposition.csproj
+		SccProjectTopLevelParentUniqueName9 = Ncs.Prototype.Option2.sln
+		SccProjectName9 = Ncs.Prototype.Web.WebComposition
+		SccLocalPath9 = Ncs.Prototype.Web.WebComposition
+		SccProjectUniqueName10 = Ncs.Prototype.Web.Web3\\Ncs.Prototype.Web.Web3.csproj
+		SccProjectTopLevelParentUniqueName10 = Ncs.Prototype.Option2.sln
+		SccProjectName10 = Ncs.Prototype.Web.Web3
+		SccLocalPath10 = Ncs.Prototype.Web.Web3
+		SccProjectUniqueName11 = Ncs.Prototype.Web.Api\\Ncs.Prototype.Web.Api.csproj
+		SccProjectTopLevelParentUniqueName11 = Ncs.Prototype.Option2.sln
+		SccProjectName11 = Ncs.Prototype.Web.Api
+		SccLocalPath11 = Ncs.Prototype.Web.Api
+		SccProjectUniqueName12 = Ncs.Prototype.Web.ApplicationManagement\\Ncs.Prototype.Web.ApplicationManagement.csproj
+		SccProjectTopLevelParentUniqueName12 = Ncs.Prototype.Option2.sln
+		SccProjectName12 = Ncs.Prototype.Web.ApplicationManagement
+		SccLocalPath12 = Ncs.Prototype.Web.ApplicationManagement
+		SccProjectUniqueName13 = Ncs.Prototype.Common\\Ncs.Prototype.Common.csproj
+		SccProjectTopLevelParentUniqueName13 = Ncs.Prototype.Option2.sln
+		SccProjectName13 = Ncs.Prototype.Common
+		SccLocalPath13 = Ncs.Prototype.Common
+		SccProjectUniqueName14 = Ncs.Prototype.Common.Services\\Ncs.Prototype.Common.Services.csproj
+		SccProjectTopLevelParentUniqueName14 = Ncs.Prototype.Option2.sln
+		SccProjectName14 = Ncs.Prototype.Common.Services
+		SccLocalPath14 = Ncs.Prototype.Common.Services
+		SccProjectUniqueName15 = Ncs.Prototype.Web.ExploreCareers\\Ncs.Prototype.Web.ExploreCareers.csproj
+		SccProjectTopLevelParentUniqueName15 = Ncs.Prototype.Option2.sln
+		SccProjectName15 = Ncs.Prototype.Web.ExploreCareers
+		SccLocalPath15 = Ncs.Prototype.Web.ExploreCareers
+		SccProjectUniqueName16 = TestWebApplication\\TestWebApplication.csproj
+		SccProjectTopLevelParentUniqueName16 = Ncs.Prototype.Option2.sln
+		SccProjectName16 = TestWebApplication
+		SccLocalPath16 = TestWebApplication
+	EndGlobalSection
+EndGlobal

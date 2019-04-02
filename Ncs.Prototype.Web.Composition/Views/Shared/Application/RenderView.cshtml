@@ -1,0 +1,54 @@
+﻿@model PageViewModel
+
+@{
+    Layout = Model.LayoutName;
+    ViewData["Branding"] = Model.Branding;
+
+    ViewData["Title"] = Model.PageTitle;
+}
+
+@if (!string.IsNullOrEmpty(Model.AppNavBarMarkup?.Value))
+{
+    @section AppNavBar {
+        @Html.Raw(Model.AppNavBarMarkup)
+    }
+}
+
+@if (!string.IsNullOrEmpty(Model.BreadcrumbsMarkup?.Value))
+{
+    @section Breadcrumbs {
+        @Html.Raw(Model.BreadcrumbsMarkup)
+    }
+}
+
+@if (!string.IsNullOrEmpty(Model.PersonalisationMarkup?.Value))
+{
+    @section Personalisation {
+        @Html.Raw(Model.PersonalisationMarkup)
+    }
+}
+
+@if (!string.IsNullOrEmpty(Model.BackButtonMarkup?.Value))
+{
+    @section BackButton {
+        @Html.Raw(Model.BackButtonMarkup)
+    }
+}
+
+@if (!string.IsNullOrEmpty(Model.ApplicationMarkup?.Value))
+{
+    @section Application {
+        @Html.Raw(Model.ApplicationMarkup)
+    }
+}
+
+@if (!string.IsNullOrEmpty(Model.SidebarMarkup?.Value))
+{
+    @section AppSideBar {
+        @Html.Raw(Model.SidebarMarkup)
+    }
+}
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

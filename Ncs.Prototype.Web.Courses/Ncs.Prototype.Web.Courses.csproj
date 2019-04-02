@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <UserSecretsId>8208f538-0c89-4ef2-a41d-24e8308b4b3c</UserSecretsId>
+    <ApplicationInsightsResourceId>/subscriptions/38e6d42f-ed34-4527-961f-d21e99e23dc2/resourcegroups/NCS-APIFE-Option2/providers/microsoft.insights/components/NcsPrototypeWebComposition</ApplicationInsightsResourceId>
+    <ApplicationInsightsAnnotationResourceId>/subscriptions/38e6d42f-ed34-4527-961f-d21e99e23dc2/resourceGroups/NCS-APIFE-Option2/providers/microsoft.insights/components/AppInsights</ApplicationInsightsAnnotationResourceId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\NcsPrototypeWebCourses - Web Deploy.pubxml.user" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="2.2.3" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.6.1" />
+    <PackageReference Include="Microsoft.ApplicationInsights.Web" Version="2.9.1" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ncs.Prototype.Common.Services\Ncs.Prototype.Common.Services.csproj" />
+    <ProjectReference Include="..\Ncs.Prototype.Common\Ncs.Prototype.Common.csproj" />
+    <ProjectReference Include="..\Ncs.Prototype.Dto\Ncs.Prototype.Dto.csproj" />
+    <ProjectReference Include="..\Ncs.Prototype.Interfaces\Ncs.Prototype.Interfaces.csproj" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Content Update="libman.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
