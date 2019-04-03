@@ -121,6 +121,14 @@ namespace Ncs.Prototype.Web.Courses
 
             app.UseMvc(routes =>
             {
+                // add the site map route
+                routes.MapRoute(
+                    name: "sitemap",
+                    template: "sitemap",
+                    defaults: new { controller = "Sitemap", action = "Sitemap" }
+                );
+
+                // add the default route
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");

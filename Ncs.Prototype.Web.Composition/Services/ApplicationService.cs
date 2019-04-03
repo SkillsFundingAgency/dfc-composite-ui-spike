@@ -199,7 +199,7 @@ namespace Ncs.Prototype.Web.Composition.Services
         {
             var attributeNames = new string[] { "href", "action" };
             var quoteChars = new char[] { '"', '\'' };
-            string replacementRootUrl = RequestBaseUrl + $"/Application/Action?ApplicationName={Application.Name}&data=";
+            string replacementRootUrl = RequestBaseUrl + $"/Application/Action?RouteName={Application.RouteName}&data=";
 
             foreach (var attributeName in attributeNames)
             {

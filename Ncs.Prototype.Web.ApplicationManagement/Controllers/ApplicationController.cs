@@ -104,6 +104,7 @@ namespace Ncs.Prototype.Web.ApplicationManagement.Controllers
             result.PersonalisationUrl = source.PersonalisationUrl;
             result.RequiresAuthorization = source.RequiresAuthorization;
             result.RootUrl = source.RootUrl;
+            result.SitemapUrl = source.SitemapUrl;
             result.RouteName = source.RouteName;
             result.ShowSideBar = source.ShowSideBar;
             result.SidebarUrl = source.SidebarUrl;
@@ -137,6 +138,7 @@ namespace Ncs.Prototype.Web.ApplicationManagement.Controllers
             result.PersonalisationUrl = source.PersonalisationUrl;
             result.RequiresAuthorization = source.RequiresAuthorization;
             result.RootUrl = source.RootUrl;
+            result.SitemapUrl = source.SitemapUrl;
             result.RouteName = source.RouteName;
             result.ShowSideBar = source.ShowSideBar;
             result.SidebarUrl = source.SidebarUrl;

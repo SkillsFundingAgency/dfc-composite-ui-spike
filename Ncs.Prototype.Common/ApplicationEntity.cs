@@ -24,6 +24,7 @@ namespace Ncs.Prototype.Common
         public string Branding { get; set; }
         public bool RequiresAuthorization { get; set; }
         public string RootUrl { get; set; }
+        public string SitemapUrl { get; set; }
         public string HealthCheckUrl { get; set; }
         public string EntrypointUrl { get; set; }
         public string SidebarUrl { get; set; }

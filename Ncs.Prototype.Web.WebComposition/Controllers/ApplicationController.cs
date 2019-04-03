@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Http;
@@ -35,7 +34,7 @@ namespace Ncs.Prototype.Web.WebComposition.Controllers
         {
             try
             {
-                await SetApplicationContextAsync(requestViewModel.ApplicationName);
+                await SetApplicationContextAsync(requestViewModel.RouteName);
 
                 if (ModelState.IsValid)
                 {
@@ -44,11 +43,17 @@ namespace Ncs.Prototype.Web.WebComposition.Controllers
             }
             catch (BrokenCircuitException ex)
             {
-                ModelState.AddModelError(string.Empty, $"{_applicationService.Application.MainMenuText}: {ex.Message}");
+                string errorString = $"{_applicationService.Application.MainMenuText}: BrokenCircuit: {ex.Message}";
+
+                _logger.LogError(ex, errorString);
+                ModelState.AddModelError(string.Empty, errorString);
             }
             catch (Exception ex)
             {
-                ModelState.AddModelError(string.Empty, $"{_applicationService.Application.MainMenuText}: {ex.Message}");
+                string errorString = $"{_applicationService.Application.MainMenuText}: {ex.Message}";
+
+                _logger.LogError(ex, errorString);
+                ModelState.AddModelError(string.Empty, errorString);
             }
 
             return View(MainRenderViewName, _pageViewModel);
@@ -59,11 +64,11 @@ namespace Ncs.Prototype.Web.WebComposition.Controllers
         {
             try
             {
-                await SetApplicationContextAsync(requestViewModel.ApplicationName);
+                await SetApplicationContextAsync(requestViewModel.RouteName);
 
                 if (ModelState.IsValid)
                 {
-                    string dataQuery = requestViewModel.Data.Length > 0 ? string.Join("&data=", requestViewModel.Data) : string.Empty;
+                    string dataQuery = requestViewModel.Data?.Length > 0 ? string.Join("&data=", requestViewModel.Data) : "/" + requestViewModel.RouteName;
 
                     await _applicationService.GetApplicationMarkUpAsync(dataQuery, _pageViewModel);
                 }
@@ -71,11 +76,17 @@ namespace Ncs.Prototype.Web.WebComposition.Controllers
             }
             catch (BrokenCircuitException ex)
             {
-                ModelState.AddModelError(string.Empty, $"{_applicationService.Application.MainMenuText}: {ex.Message}");
+                string errorString = $"{_applicationService.Application.MainMenuText}: BrokenCircuit: {ex.Message}";
+
+                _logger.LogError(ex, errorString);
+                ModelState.AddModelError(string.Empty, errorString);
             }
             catch (Exception ex)
             {
-                ModelState.AddModelError(string.Empty, $"{_applicationService.Application.MainMenuText}: {ex.Message}");
+                string errorString = $"{_applicationService.Application.MainMenuText}: {ex.Message}";
+
+                _logger.LogError(ex, errorString);
+                ModelState.AddModelError(string.Empty, errorString);
             }
 
             return View(MainRenderViewName, _pageViewModel);
@@ -86,7 +97,7 @@ namespace Ncs.Prototype.Web.WebComposition.Controllers
         {
             try
             {
-                await SetApplicationContextAsync(requestViewModel.ApplicationName);
+                await SetApplicationContextAsync(requestViewModel.RouteName);
 
                 if (ModelState.IsValid)
                 {
@@ -99,69 +110,89 @@ namespace Ncs.Prototype.Web.WebComposition.Controllers
             }
             catch (BrokenCircuitException ex)
             {
-                ModelState.AddModelError(string.Empty, $"{_applicationService.Application.MainMenuText}: {ex.Message}");
+                string errorString = $"{_applicationService.Application.MainMenuText}: BrokenCircuit: {ex.Message}";
+
+                _logger.LogError(ex, errorString);
+                ModelState.AddModelError(string.Empty, errorString);
             }
             catch (Exception ex)
             {
-                ModelState.AddModelError(string.Empty, $"{_applicationService.Application.MainMenuText}: {ex.Message}");
+                string errorString = $"{_applicationService.Application.MainMenuText}: {ex.Message}";
+
+                _logger.LogError(ex, errorString);
+                ModelState.AddModelError(string.Empty, errorString);
             }
 
             return View(MainRenderViewName, _pageViewModel);
         }
 
-        private async Task SetApplicationContextAsync(string applicationName)
+        private async Task SetApplicationContextAsync(string routeName)
         {
-            _applicationService.Application = _registeredApplications.Applications?.FirstOrDefault(f => string.Compare(f.Name, applicationName, true) == 0);
-
-            _logger.LogInformation($"Loaded application for name: {applicationName}: {_applicationService.Application.MainMenuText}");
-
-            _pageViewModel = MapApplicationToPageViewModel(_applicationService.Application);
-
-            _applicationService.BearerToken = (User.Identity.IsAuthenticated ? await HttpContext.GetTokenAsync("id_token") : null);
-
-            if (User.Identity.IsAuthenticated && string.IsNullOrEmpty(_applicationService.BearerToken))
-            {
-                var header = HttpContext.Request.Headers.FirstOrDefault(f => f.Key == "Authorization");
-
-                if (header.Key != null)
-                {
-                    var parts = header.Value.First().Split(" ");
-
-                    if (parts.Length > 1)
-                    {
-                        _applicationService.BearerToken = parts[1];
-                    }
-                }
-            }
-            //              logger.Log(LogLevel.Information, $"Added BearerToken: {_applicationService.BearerToken}");
-
-            _applicationService.User = User;
-            _applicationService.RequestBaseUrl = string.Format("{0}://{1}{2}", Request.Scheme, Request.Host, Url.Content("~"));
+            _applicationService.Application = _registeredApplications.Applications?.FirstOrDefault(f => string.Compare(f.RouteName, routeName, true) == 0);
 
             if (_applicationService.Application == null)
             {
-                ModelState.AddModelError(string.Empty, "Internal error: Missing Application definition");
+                string errorString = "Internal error: Missing Application definition";
+
+                _logger.LogError(errorString);
+                ModelState.AddModelError(string.Empty, errorString);
             }
             else
             {
+                _logger.LogInformation($"Loaded application for name: {_applicationService.Application.Name}: {_applicationService.Application.MainMenuText}");
+
+                _pageViewModel = MapApplicationToPageViewModel(_applicationService.Application);
+
+                _applicationService.BearerToken = (User.Identity.IsAuthenticated ? await HttpContext.GetTokenAsync("id_token") : null);
+
+                if (User.Identity.IsAuthenticated && string.IsNullOrEmpty(_applicationService.BearerToken))
+                {
+                    var header = HttpContext.Request.Headers.FirstOrDefault(f => f.Key == "Authorization");
+
+                    if (header.Key != null)
+                    {
+                        var parts = header.Value.First().Split(" ");
+
+                        if (parts.Length > 1)
+                        {
+                            _applicationService.BearerToken = parts[1];
+                        }
+                    }
+                }
+
+                _applicationService.User = User;
+                _applicationService.RequestBaseUrl = string.Format("{0}://{1}{2}", Request.Scheme, Request.Host, Url.Content("~"));
+
                 if (string.IsNullOrEmpty(_applicationService.Application.RootUrl))
                 {
-                    ModelState.AddModelError(string.Empty, $"Application context error: ({_applicationService.Application.Title}) Missing RootUrl definition");
+                    string errorString = $"Application context error: ({_applicationService.Application.Title}) Missing RootUrl definition";
+
+                    _logger.LogError(errorString);
+                    ModelState.AddModelError(string.Empty, errorString);
                 }
 
                 if (string.IsNullOrEmpty(_applicationService.Application.HealthCheckUrl))
                 {
-                    ModelState.AddModelError(string.Empty, $"Application context error: ({_applicationService.Application.Title}) Missing HealthCheckUrl definition");
+                    string errorString = $"Application context error: ({_applicationService.Application.Title}) Missing HealthCheckUrl definition";
+
+                    _logger.LogError(errorString);
+                    ModelState.AddModelError(string.Empty, errorString);
                 }
 
                 if (string.IsNullOrEmpty(_applicationService.Application.EntrypointUrl))
                 {
-                    ModelState.AddModelError(string.Empty, $"Application context error: ({_applicationService.Application.Title}) Missing EntrypointUrl definition");
+                    string errorString = $"Application context error: ({_applicationService.Application.Title}) Missing EntrypointUrl definition";
+
+                    _logger.LogError(errorString);
+                    ModelState.AddModelError(string.Empty, errorString);
                 }
 
                 if (_applicationService.Application.ShowSideBar && string.IsNullOrEmpty(_applicationService.Application.SidebarUrl))
                 {
-                    ModelState.AddModelError(string.Empty, $"Application context error: ({_applicationService.Application.Title}) Missing SidebarUrl definition");
+                    string errorString = $"Application context error: ({_applicationService.Application.Title}) Missing SidebarUrl definition";
+
+                    _logger.LogError(errorString);
+                    ModelState.AddModelError(string.Empty, errorString);
                 }
             }
 
@@ -171,7 +202,10 @@ namespace Ncs.Prototype.Web.WebComposition.Controllers
 
                 if (!_applicationService.Health.IsHealthy)
                 {
-                    ModelState.AddModelError(string.Empty, $"{_applicationService.Health.UnHealthyClue}: ({_applicationService.Application.Title})");
+                    string errorString = $"{_applicationService.Health.UnHealthyClue}: ({_applicationService.Application.Title})";
+
+                    _logger.LogError(errorString);
+                    ModelState.AddModelError(string.Empty, errorString);
                 }
             }
         }

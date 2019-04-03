@@ -2,6 +2,6 @@
 {
     public class IndexRequestViewModel
     {
-        public string ApplicationName { get; set; }
+        public string RouteName { get; set; }
     }
 }

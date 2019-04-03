@@ -124,6 +124,10 @@ namespace Ncs.Prototype.Web.Composition
                 .AddHttpClient<Services.IApplicationService, Services.ApplicationService, ApplicationClientOptions>(
                     Configuration,
                     nameof(ApplicationOptions.ApplicationClient)
+                )
+                .AddHttpClient<Services.IApplicationSitemapService, Services.ApplicationSitemapService, ApplicationClientOptions>(
+                    Configuration,
+                    nameof(ApplicationOptions.ApplicationClient)
                 );
         }
 
@@ -222,6 +226,13 @@ namespace Ncs.Prototype.Web.Composition
                         );
                     }
                 }
+
+                // add the site map route
+                routes.MapRoute(
+                    name: "sitemap",
+                    template: "sitemap",
+                    defaults: new { controller = "Sitemap", action = "Sitemap" }
+                );
 
                 // add the default route
                 routes.MapRoute(

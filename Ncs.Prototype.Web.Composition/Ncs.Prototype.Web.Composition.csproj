@@ -16,6 +16,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="applog.txt" />
     <None Remove="healthchecksdb" />
   </ItemGroup>
 
