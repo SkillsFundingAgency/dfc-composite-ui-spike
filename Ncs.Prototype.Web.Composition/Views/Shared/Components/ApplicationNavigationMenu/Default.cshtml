@@ -1,5 +1,15 @@
-﻿@model Ncs.Prototype.Web.Composition.ViewComponents.ApplicationNavigationMenuViewModel
+﻿@using Microsoft.AspNetCore.Http;
+@model Ncs.Prototype.Web.Composition.ViewComponents.ApplicationNavigationMenuViewModel
 
+@{
+    var key = "Visits";
+    var visits = Context.Session.GetInt32(key) ?? 0;
+    visits += 1;
+    Context.Session.SetInt32(key, visits);
+    ViewData[key] = visits;
+}
+
+<p>shell.sessions.visits=@visits</p>
 @foreach (var application in Model.Applications.Where(w => !string.IsNullOrEmpty(w.MainMenuText)))
 {
     <li class="govuk-header__navigation-item">
