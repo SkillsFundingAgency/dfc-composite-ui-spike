@@ -38,6 +38,12 @@ namespace Ncs.Prototype.Web.Courses
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(5);
+                options.Cookie.IsEssential = true;
+            });
+
             services.AddTransient<ICourseService, CourseService>();
 
             services.AddHealthChecks()
@@ -107,6 +113,7 @@ namespace Ncs.Prototype.Web.Courses
                 app.UseHsts();
             }
 
+            app.UseSession();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();

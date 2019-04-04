@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Ncs.Prototype.Web.Courses.Data;
 using Ncs.Prototype.Web.Courses.Models;
@@ -20,6 +21,12 @@ namespace Ncs.Prototype.Web.Courses.Controllers
         [HttpGet]
         public IActionResult Index(string category, string filter, string searchClue)
         {
+            var key = "Visits";
+            var visits = HttpContext.Session.GetInt32(key) ?? 0;
+            visits += 1;
+            HttpContext.Session.SetInt32(key, visits);
+            ViewData[key] = visits;
+
             var vm = new CourseIndexViewModel();
             string city = ((string.Compare(filter, "Mine", true) == 0) ? GetCity() : string.Empty);
             bool filterThisMonth = (string.Compare(filter, "ThisMonth", true) == 0);
