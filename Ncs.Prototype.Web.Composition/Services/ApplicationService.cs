@@ -1,20 +1,24 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Http;
 
 namespace Ncs.Prototype.Web.Composition.Services
 {
     public class ApplicationService : IApplicationService
     {
         private readonly HttpClient _httpClient;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public ApplicationService(HttpClient httpClient)
+        public ApplicationService(HttpClient httpClient, IHttpContextAccessor httpContextAccessor)
         {
             _httpClient = httpClient;
+            _httpContextAccessor = httpContextAccessor;
         }
 
         public Dto.ApplicationDto Application { get; set; }
@@ -71,7 +75,7 @@ namespace Ncs.Prototype.Web.Composition.Services
 
         private async Task GetMarkUpAsync(string url, Models.PageViewModel pageViewModel)
         {
-            var applicationTask = BuildApplicationMarkUpAsync(url);
+            var applicationTask = BuildApplicationMarkUpAsync(url, Application.Name);
             var otherRegionsTasks = LoadOtherRegionsAsync(pageViewModel);
 
             await Task.WhenAll(applicationTask, otherRegionsTasks);
@@ -88,11 +92,14 @@ namespace Ncs.Prototype.Web.Composition.Services
 
         private async Task LoadOtherRegionsAsync(Models.PageViewModel pageViewModel)
         {
+            await Task.CompletedTask;
+            return;
+
             Task<HtmlString> CreateTask(List<Task<HtmlString>> tasks, string url, bool show = true)
             {
                 if (show && !string.IsNullOrEmpty(url))
                 {
-                    var task = BuildApplicationMarkUpAsync(url);
+                    var task = BuildApplicationMarkUpAsync(url, Application.Name);
 
                     tasks.Add(task);
 
@@ -138,22 +145,46 @@ namespace Ncs.Prototype.Web.Composition.Services
             pageViewModel.BackButtonMarkup = GetMarkupResult(backButtonTask);
         }
 
-        private async Task<HtmlString> BuildApplicationMarkUpAsync(string url)
+        private async Task<HtmlString> BuildApplicationMarkUpAsync(string url, string applicationName)
         {
-            var request = new HttpRequestMessage(HttpMethod.Get, url);
-
-            if (!string.IsNullOrEmpty(BearerToken))
+            var responseString = string.Empty;
+            using (var client = new HttpClient())
             {
-                request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", BearerToken);
+                var childApplicationSessionKey = $"{applicationName}.Cookie";
+                var setCookie = "Set-Cookie";
+                var aspNetCoreSessionName = ".AspNetCore.Session";
+
+                var request = new HttpRequestMessage(HttpMethod.Get, url);
+
+                if (!string.IsNullOrEmpty(BearerToken))
+                {
+                    request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", BearerToken);
+                }
+
+                client.DefaultRequestHeaders.Clear();
+                var aspNetCoreSessionValue = _httpContextAccessor.HttpContext.Session.GetString(childApplicationSessionKey);
+                if (!string.IsNullOrWhiteSpace(aspNetCoreSessionValue))
+                {
+                    client.DefaultRequestHeaders.Add("Cookie", $"{aspNetCoreSessionName}={aspNetCoreSessionValue}");
+                }
+
+                var response = await client.SendAsync(request);
+
+                response.EnsureSuccessStatusCode();
+
+                responseString = await response.Content.ReadAsStringAsync();
+
+                var responseSessionIdHeader = response.Headers.FirstOrDefault(x => x.Key == setCookie);
+                if (responseSessionIdHeader.Value != null)
+                {
+                    var applicationAspNetCoreSessionValue = responseSessionIdHeader.Value.First().Split('=').ElementAt(1).Split(';').First();
+
+                    _httpContextAccessor.HttpContext.Session.SetString(childApplicationSessionKey, applicationAspNetCoreSessionValue);
+                }
+
+                responseString = RewriteResponseUrls(responseString);
+
             }
-
-            var response = await _httpClient.SendAsync(request);
-
-            response.EnsureSuccessStatusCode();
-
-            var responseString = await response.Content.ReadAsStringAsync();
-
-            responseString = RewriteResponseUrls(responseString);
 
             return new HtmlString(responseString);
         }

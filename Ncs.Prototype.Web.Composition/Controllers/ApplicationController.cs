@@ -117,9 +117,9 @@ namespace Ncs.Prototype.Web.Composition.Controllers
 
             _applicationService.Application = applications.FirstOrDefault(f => string.Compare(f.Name, applicationName, true) == 0);
 
-            ViewData["CorrelationId"] = _correlationContextAccessor.CorrelationContext.CorrelationId;
+            //ViewData["CorrelationId"] = _correlationContextAccessor.CorrelationContext.CorrelationId;
 
-            _logger.LogInformation($"Loaded application for name: {applicationName}: {_applicationService.Application.MainMenuText}: {_correlationContextAccessor.CorrelationContext.CorrelationId}");
+            //_logger.LogInformation($"Loaded application for name: {applicationName}: {_applicationService.Application.MainMenuText}: {_correlationContextAccessor.CorrelationContext.CorrelationId}");
 
             _pageViewModel = MapApplicationToPageViewModel(_applicationService.Application);
 
@@ -153,7 +153,7 @@ namespace Ncs.Prototype.Web.Composition.Controllers
                     ModelState.AddModelError(string.Empty, $"Application context error: ({_applicationService.Application.Title}) Missing SidebarUrl definition");
                 }
             }
-
+            /*
             if (ModelState.IsValid && !string.IsNullOrEmpty(_applicationService.Application.HealthCheckUrl))
             {
                 await _applicationService.HeathCheckAsync();
@@ -162,7 +162,7 @@ namespace Ncs.Prototype.Web.Composition.Controllers
                 {
                     ModelState.AddModelError(string.Empty, $"{_applicationService.Health.UnHealthyClue}: ({_applicationService.Application.Title})");
                 }
-            }
+            }*/
         }
 
         private Models.PageViewModel MapApplicationToPageViewModel(Dto.ApplicationDto application)

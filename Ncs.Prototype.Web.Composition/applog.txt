@@ -216,3 +216,312 @@
 29/03/2019 14:06:12 CosmosDBObserver ProcessChangesAsync for 2 documents. Id of first is Courses 
 29/03/2019 14:06:16 CosmosDBObserver ProcessChangesAsync 
 29/03/2019 14:06:16 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is SkillsHealthCheck 
+04/04/2019 10:14:11 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 10:14:11 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 10:15:17 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 10:15:17 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 10:17:48 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 10:17:48 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 10:18:48 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 10:18:48 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 10:22:46 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 10:22:46 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 10:22:47 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 10:22:48 CosmosDBObserverFactory CreateObserver 
+04/04/2019 10:22:48 CosmosDBObserver OpenAsync.0 
+04/04/2019 10:22:48 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 10:29:29 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 10:29:29 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 10:35:11 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 10:35:11 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 10:40:28 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 10:40:28 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 10:42:09 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 10:42:09 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 10:47:21 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 10:47:21 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 10:49:47 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 10:49:47 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 10:55:45 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 10:55:45 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 11:05:19 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 11:05:20 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 12:33:33 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 12:33:33 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 12:33:35 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 12:33:36 CosmosDBObserverFactory CreateObserver 
+04/04/2019 12:33:36 CosmosDBObserver OpenAsync.0 
+04/04/2019 12:33:36 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 12:38:14 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 12:38:14 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 12:38:15 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 12:38:15 CosmosDBObserverFactory CreateObserver 
+04/04/2019 12:38:15 CosmosDBObserver OpenAsync.0 
+04/04/2019 12:38:16 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 12:39:10 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 12:39:10 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 12:39:11 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 12:39:11 CosmosDBObserverFactory CreateObserver 
+04/04/2019 12:39:11 CosmosDBObserver OpenAsync.0 
+04/04/2019 12:39:11 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 12:39:16 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 12:39:16 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 12:40:22 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 12:40:22 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 12:47:57 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 12:47:57 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 12:50:48 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 12:50:48 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 12:54:21 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 12:54:21 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 12:54:22 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 12:54:22 CosmosDBObserverFactory CreateObserver 
+04/04/2019 12:54:22 CosmosDBObserver OpenAsync.0 
+04/04/2019 12:54:22 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 12:54:48 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 12:54:48 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 14:19:36 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 14:19:36 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 14:19:37 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 14:19:37 CosmosDBObserverFactory CreateObserver 
+04/04/2019 14:19:37 CosmosDBObserver OpenAsync.0 
+04/04/2019 14:19:37 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 14:19:42 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 14:19:42 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 14:20:18 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 14:20:18 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 14:22:32 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 14:22:32 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 14:23:46 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 14:23:46 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 14:25:00 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 14:25:00 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 14:25:01 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 14:25:02 CosmosDBObserverFactory CreateObserver 
+04/04/2019 14:25:02 CosmosDBObserver OpenAsync.0 
+04/04/2019 14:25:02 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 14:25:07 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 14:25:07 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 14:30:53 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 14:30:53 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 14:33:08 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 14:33:08 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 14:47:28 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 14:47:28 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 14:49:30 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 14:49:30 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 14:49:31 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 14:49:32 CosmosDBObserverFactory CreateObserver 
+04/04/2019 14:49:32 CosmosDBObserver OpenAsync.0 
+04/04/2019 14:49:32 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 14:49:42 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 14:49:42 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 14:53:04 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 14:53:04 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 14:53:26 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 14:53:26 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 14:53:27 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 14:53:27 CosmosDBObserverFactory CreateObserver 
+04/04/2019 14:53:27 CosmosDBObserver OpenAsync.0 
+04/04/2019 14:53:27 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 14:55:38 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 14:55:38 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 14:58:04 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 14:58:04 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 15:03:33 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 15:03:33 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 15:03:35 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 15:03:35 CosmosDBObserverFactory CreateObserver 
+04/04/2019 15:03:35 CosmosDBObserver OpenAsync.0 
+04/04/2019 15:03:35 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 15:03:35 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 15:03:36 CosmosDBHostedBackgroundService System.IO.IOException: The process cannot access the file 'D:\Clients\Esfa\Code\Ncs\git\repos\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\applog.txt' because it is being used by another process.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.AppendAllText(String path, String contents)
+   at Ncs.Prototype.Web.Composition.Loggers.FileLog.Log(String data) in D:\Clients\Esfa\Code\Ncs\git\repos\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\Loggers\FileLog.cs:line 19
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.Log(String data) in D:\Clients\Esfa\Code\Ncs\git\repos\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 81
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.ExecuteAsync(CancellationToken stoppingToken) in D:\Clients\Esfa\Code\Ncs\git\repos\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 63 
+04/04/2019 15:04:24 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 15:04:24 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 15:04:25 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 15:04:26 CosmosDBObserverFactory CreateObserver 
+04/04/2019 15:04:26 CosmosDBObserver OpenAsync.0 
+04/04/2019 15:04:26 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 15:06:07 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 15:06:07 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 15:06:08 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 15:06:09 CosmosDBObserverFactory CreateObserver 
+04/04/2019 15:06:09 CosmosDBObserver OpenAsync.0 
+04/04/2019 15:06:09 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 15:06:14 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 15:06:14 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 15:16:14 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 15:16:14 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 15:16:15 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 15:16:16 CosmosDBObserverFactory CreateObserver 
+04/04/2019 15:16:16 CosmosDBObserver OpenAsync.0 
+04/04/2019 15:16:16 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 15:18:30 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 15:18:30 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 15:18:31 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 15:18:32 CosmosDBObserverFactory CreateObserver 
+04/04/2019 15:18:32 CosmosDBObserver OpenAsync.0 
+04/04/2019 15:18:32 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 15:19:57 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 15:19:58 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 15:19:58 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 15:19:59 CosmosDBObserverFactory CreateObserver 
+04/04/2019 15:19:59 CosmosDBObserver OpenAsync.0 
+04/04/2019 15:19:59 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 15:22:15 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 15:22:15 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 15:22:16 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 15:22:16 CosmosDBObserverFactory CreateObserver 
+04/04/2019 15:22:16 CosmosDBObserver OpenAsync.0 
+04/04/2019 15:22:17 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 15:22:22 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 15:22:22 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 15:28:13 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 15:28:13 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 08:35:37 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 08:35:37 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 08:35:38 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 08:35:38 CosmosDBObserverFactory CreateObserver 
+05/04/2019 08:35:39 CosmosDBObserver OpenAsync.0 
+05/04/2019 08:35:39 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 08:35:39 CosmosDBObserver CloseAsync.ObserverError 
+05/04/2019 08:35:54 CosmosDBObserverFactory CreateObserver 
+05/04/2019 08:35:54 CosmosDBObserver OpenAsync.0 
+05/04/2019 08:35:54 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 08:35:54 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 08:45:58 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 08:45:58 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 08:45:59 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 08:46:00 CosmosDBObserverFactory CreateObserver 
+05/04/2019 08:46:00 CosmosDBObserver OpenAsync.0 
+05/04/2019 08:46:00 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 08:46:05 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 08:46:05 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 10:17:06 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 10:17:06 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 10:18:19 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 10:18:19 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 10:24:00 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 10:24:00 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 10:34:20 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 10:34:20 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 10:34:21 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 10:34:22 CosmosDBObserverFactory CreateObserver 
+05/04/2019 10:34:22 CosmosDBObserver OpenAsync.0 
+05/04/2019 10:34:22 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 10:34:47 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 10:34:47 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 10:44:08 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 10:44:08 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 10:46:56 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 10:46:56 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 10:46:57 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 10:46:58 CosmosDBObserverFactory CreateObserver 
+05/04/2019 10:46:58 CosmosDBObserver OpenAsync.0 
+05/04/2019 10:46:58 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 10:47:03 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 10:47:03 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 10:47:23 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 10:47:23 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 10:49:34 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 10:49:34 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 10:49:36 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 10:49:36 CosmosDBObserverFactory CreateObserver 
+05/04/2019 10:49:36 CosmosDBObserver OpenAsync.0 
+05/04/2019 10:49:36 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 10:49:51 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 10:49:51 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 11:24:56 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 11:24:56 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 11:24:57 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 11:24:57 CosmosDBObserverFactory CreateObserver 
+05/04/2019 11:24:57 CosmosDBObserver OpenAsync.0 
+05/04/2019 11:24:58 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 11:34:56 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 11:34:56 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 12:02:04 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 12:02:04 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 12:05:51 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 12:05:51 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 12:08:28 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 12:08:28 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 12:22:23 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 12:22:23 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 12:36:20 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 12:36:20 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 12:38:27 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 12:38:27 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 12:38:28 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 12:38:29 CosmosDBObserverFactory CreateObserver 
+05/04/2019 12:38:29 CosmosDBObserver OpenAsync.0 
+05/04/2019 12:38:29 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 13:11:41 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 13:11:41 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 13:13:37 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 13:13:37 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 13:42:22 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 13:42:22 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is SkillsHealthCheck 
+05/04/2019 13:43:10 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 13:43:10 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 13:43:10 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 13:43:11 CosmosDBObserverFactory CreateObserver 
+05/04/2019 13:43:11 CosmosDBObserver OpenAsync.0 
+05/04/2019 13:43:11 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 13:43:16 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 13:43:16 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 13:46:28 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 13:46:28 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 13:46:29 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 13:46:30 CosmosDBObserverFactory CreateObserver 
+05/04/2019 13:46:30 CosmosDBObserver OpenAsync.0 
+05/04/2019 13:46:30 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 13:46:35 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 13:46:35 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 13:52:22 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 13:52:22 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is SkillsHealthCheck 
+05/04/2019 13:52:37 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 13:52:37 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is ExploreCareers 
+05/04/2019 13:52:52 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 13:52:52 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 14:05:37 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 14:05:37 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Composite 
+05/04/2019 14:05:42 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 14:05:42 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Composite 
+05/04/2019 14:08:13 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 14:08:13 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Composite 
+05/04/2019 14:34:07 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 14:34:07 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Composite 
+05/04/2019 14:35:30 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 14:35:30 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 14:35:31 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 14:35:32 CosmosDBObserverFactory CreateObserver 
+05/04/2019 14:35:32 CosmosDBObserver OpenAsync.0 
+05/04/2019 14:35:32 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 14:35:37 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 14:35:37 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 14:36:40 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 14:36:40 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 14:36:41 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 14:36:42 CosmosDBObserverFactory CreateObserver 
+05/04/2019 14:36:42 CosmosDBObserver OpenAsync.0 
+05/04/2019 14:36:42 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 14:36:47 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 14:36:47 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 14:37:27 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 14:37:27 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 14:37:27 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 14:37:28 CosmosDBObserverFactory CreateObserver 
+05/04/2019 14:37:28 CosmosDBObserver OpenAsync.0 
+05/04/2019 14:37:28 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 14:37:38 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 14:37:38 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 14:47:57 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 14:47:57 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Composite 

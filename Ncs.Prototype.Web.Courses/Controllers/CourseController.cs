@@ -26,6 +26,7 @@ namespace Ncs.Prototype.Web.Courses.Controllers
             visits += 1;
             HttpContext.Session.SetInt32(key, visits);
             ViewData[key] = visits;
+            ViewData["sessionId"] = HttpContext.Session.Id;
 
             var vm = new CourseIndexViewModel();
             string city = ((string.Compare(filter, "Mine", true) == 0) ? GetCity() : string.Empty);
@@ -33,16 +34,7 @@ namespace Ncs.Prototype.Web.Courses.Controllers
             bool filterNextMonth = (string.Compare(filter, "NextMonth", true) == 0);
 
             vm.Courses = _courseService.GetCourses(city, category, filterThisMonth, filterNextMonth, searchClue);
-
-            if (DateTime.Now.Second >= 45)
-            {
-                throw new System.Exception("kaboom");
-            }
-            if (DateTime.Now.Second > 10 && DateTime.Now.Second < 15)
-            {
-                System.Threading.Thread.Sleep(new TimeSpan(0, 0, 13));
-            }
-
+            
             return View(vm);
         }
 

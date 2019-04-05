@@ -9,6 +9,7 @@
     ViewData[key] = visits;
 }
 
+<p>shell.SessionId=@Model.SessionId</p>
 <p>shell.sessions.visits=@visits</p>
 @foreach (var application in Model.Applications.Where(w => !string.IsNullOrEmpty(w.MainMenuText)))
 {

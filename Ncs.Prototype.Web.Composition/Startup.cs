@@ -46,6 +46,10 @@ namespace Ncs.Prototype.Web.Composition
         {
             services.AddCorrelationId();
 
+            services.AddHttpContextAccessor();
+
+            services.AddDistributedMemoryCache();
+
             services.AddSession(options =>
             {
                 options.IdleTimeout = TimeSpan.FromMinutes(10);
@@ -121,7 +125,7 @@ namespace Ncs.Prototype.Web.Composition
             var sp = services.BuildServiceProvider();
             var applicationManagementService = sp.GetService<ApplicationManagementService>();
 
-            AddHealthChecks(services, applicationManagementService);
+            //AddHealthChecks(services, applicationManagementService);
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
@@ -136,13 +140,6 @@ namespace Ncs.Prototype.Web.Composition
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ApplicationManagementService applicationManagementService)
         {
-            app.UseCorrelationId(new CorrelationIdOptions
-            {
-                Header = "X-Correlation-ID",
-                UseGuidForCorrelationId = true,
-                UpdateTraceIdentifier = false               // = false is a Core 2.2 workaround - should be fixed in Core 2.2.2
-            });
-
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -159,17 +156,6 @@ namespace Ncs.Prototype.Web.Composition
             app.UseStaticFiles();
             app.UseCookiePolicy();
             app.UseAuthentication();
-
-            app.UseHealthChecks("/liveness", new HealthCheckOptions
-            {
-                Predicate = r => r.Name.Contains("self")
-            });
-            app.UseHealthChecks("/health", new HealthCheckOptions()
-            {
-                Predicate = _ => true,
-                ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
-            });
-            app.UseHealthChecksUI();
 
             ConfigureRouting(app, applicationManagementService);
         }

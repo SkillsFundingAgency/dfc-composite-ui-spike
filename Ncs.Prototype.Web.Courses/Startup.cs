@@ -38,6 +38,8 @@ namespace Ncs.Prototype.Web.Courses
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            services.AddDistributedMemoryCache();
+
             services.AddSession(options =>
             {
                 options.IdleTimeout = TimeSpan.FromMinutes(5);
@@ -117,12 +119,7 @@ namespace Ncs.Prototype.Web.Courses
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
-
-            app.UseHealthChecks("/ready", new HealthCheckOptions()
-            {
-                Predicate = _ => true,
-                ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
-            });
+            
 
             app.UseAuthentication();
 

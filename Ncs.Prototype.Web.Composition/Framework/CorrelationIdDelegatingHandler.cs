@@ -30,8 +30,8 @@ namespace Ncs.Prototype.Web.Composition.Framework
         {
             if (!request.Headers.Contains(this.options.Value.Header))
             {
-                request.Headers.Add(this.options.Value.Header, correlationContextAccessor.CorrelationContext.CorrelationId);
-                logger.Log(LogLevel.Information, $"Added CorrelationID: {correlationContextAccessor.CorrelationContext.CorrelationId}");
+               // request.Headers.Add(this.options.Value.Header, correlationContextAccessor.CorrelationContext.CorrelationId);
+               // logger.Log(LogLevel.Information, $"Added CorrelationID: {correlationContextAccessor.CorrelationContext.CorrelationId}");
             }
 
             // Else the header has already been added due to a retry.
