@@ -1,10 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 using Ncs.Prototype.Common;
 using Ncs.Prototype.Dto;
 using Ncs.Prototype.Web.ApplicationManagement.Dto;
 using Ncs.Prototype.Web.ApplicationManagement.Services;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace Ncs.Prototype.Web.ApplicationManagement.Controllers
 {
@@ -104,7 +104,9 @@ namespace Ncs.Prototype.Web.ApplicationManagement.Controllers
             result.PersonalisationUrl = source.PersonalisationUrl;
             result.RequiresAuthorization = source.RequiresAuthorization;
             result.RootUrl = source.RootUrl;
+            result.SitemapUrl = source.SitemapUrl;
             result.RouteName = source.RouteName;
+            result.ChildRoutePrefix = source.ChildRoutePrefix;
             result.ShowSideBar = source.ShowSideBar;
             result.SidebarUrl = source.SidebarUrl;
             result.Title = source.Title;
@@ -137,7 +139,9 @@ namespace Ncs.Prototype.Web.ApplicationManagement.Controllers
             result.PersonalisationUrl = source.PersonalisationUrl;
             result.RequiresAuthorization = source.RequiresAuthorization;
             result.RootUrl = source.RootUrl;
+            result.SitemapUrl = source.SitemapUrl;
             result.RouteName = source.RouteName;
+            result.ChildRoutePrefix = source.ChildRoutePrefix;
             result.ShowSideBar = source.ShowSideBar;
             result.SidebarUrl = source.SidebarUrl;
             result.Title = source.Title;

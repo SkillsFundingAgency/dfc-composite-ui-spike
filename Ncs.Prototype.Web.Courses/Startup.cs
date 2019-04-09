@@ -121,6 +121,41 @@ namespace Ncs.Prototype.Web.Courses
 
             app.UseMvc(routes =>
             {
+                // add the courses routing
+                routes.MapRoute(
+                    name: $"Course-Index-Category",
+                    template: "Course/Category/{category}",
+                    defaults: new { controller = "Course", action = "Index" }
+                );
+                routes.MapRoute(
+                    name: $"Course-Index-Filter",
+                    template: "Course/Filter/{filter}",
+                    defaults: new { controller = "Course", action = "Index" }
+                );
+                routes.MapRoute(
+                    name: $"Course-Index",
+                    template: "Course/Index",
+                    defaults: new { controller = "Course", action = "Index" }
+                );
+                routes.MapRoute(
+                    name: $"Course-Search",
+                    template: "Course/Search/{searchClue?}",
+                    defaults: new { controller = "Course", action = "Search" }
+                );
+                routes.MapRoute(
+                    name: $"Course-Index-Search",
+                    template: "Course/{searchClue}",
+                    defaults: new { controller = "Course", action = "Index" }
+                );
+
+                // add the site map route
+                routes.MapRoute(
+                    name: "Sitemap",
+                    template: "Sitemap",
+                    defaults: new { controller = "Sitemap", action = "Sitemap" }
+                );
+
+                // add the default route
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");

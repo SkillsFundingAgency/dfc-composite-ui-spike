@@ -4,7 +4,7 @@ namespace Ncs.Prototype.Web.Composition.ViewModels
 {
     public class ActionPostRequestViewModel
     {
-        public string ApplicationName { get; set; }
+        public string RouteName { get; set; }
         public IFormCollection FormCollection { get; set; }
     }
 }

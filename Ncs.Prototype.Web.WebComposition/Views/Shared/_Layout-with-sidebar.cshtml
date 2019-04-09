@@ -1,14 +1,14 @@
 ﻿<div class="govuk-width-container">
     @if (IsSectionDefined("AppNavBar"))
     {
-        <div class="CompositeChildRegion">
+        <div class="CompositeUI-ChildRegion">
             @RenderSection("AppNavBar", required: false)
         </div>
     }
 
     @if (IsSectionDefined("Breadcrumbs"))
     {
-        <div class="CompositeChildRegion">
+        <div class="CompositeUI-ChildRegion">
             @RenderSection("Breadcrumbs", required: false)
         </div>
     }
@@ -16,7 +16,7 @@
     {
         if (User.Identity.IsAuthenticated)
         {
-            <div class="CompositeChildRegion">
+            <div class="CompositeUI-ChildRegion">
                 @RenderSection("Personalisation", required: false)
             </div>
         }
@@ -28,7 +28,7 @@
 
     @if (IsSectionDefined("BackButton"))
     {
-        <div class="CompositeChildRegion">
+        <div class="CompositeUI-ChildRegion">
             @RenderSection("BackButton", required: false)
         </div>
     }
@@ -40,7 +40,7 @@
         <div class="govuk-grid-column-one-third">
             @if (IsSectionDefined("AppSideBar"))
             {
-                <div class="CompositeChildRegion">
+                <div class="CompositeUI-ChildRegion">
                     @RenderSection("AppSideBar", required: false)
                 </div>
             }
@@ -49,7 +49,7 @@
         <div class="govuk-grid-column-two-thirds">
             @if (IsSectionDefined("Application"))
             {
-                <div class="CompositeChildRegion CompositeChildRegionScrollX">
+                <div class="CompositeUI-ChildRegion CompositeUI-ChildRegionScrollX">
                     @RenderSection("Application", required: false)
                 </div>
             }

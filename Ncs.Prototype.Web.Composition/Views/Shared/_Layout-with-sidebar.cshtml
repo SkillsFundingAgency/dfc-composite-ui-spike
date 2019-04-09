@@ -22,16 +22,16 @@
     <link rel="apple-touch-icon" href="~/@(Branding)/assets/images/govuk-apple-touch-icon.png">
 
     <!--[if !IE 8]><!-->
-    <link href="~/@(Branding)/@(Branding).min.css" rel="stylesheet" />
+    <link href="~/@(Branding)/@(Branding).min.css" rel="stylesheet" asp-append-version="true" />
     <!--<![endif]-->
     <!--[if IE 8]>
-      <link href="~/@(Branding)/@(Branding)-ie8.min.css" rel="stylesheet" />
+      <link href="~/@(Branding)/@(Branding)-ie8.min.css" rel="stylesheet" asp-append-version="true" />
     <![endif]-->
     <!--[if lt IE 9]>
-      <script src="~/html5-shiv/html5shiv.js"></script>
+      <script src="~/html5-shiv/html5shiv.js" asp-append-version="true"></script>
     <![endif]-->
 
-    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/css/site.css" rel="stylesheet" asp-append-version="true" />
 
     <meta property="og:image" content="~/@(Branding)/assets/images/govuk-opengraph-image.png">
 </head>
@@ -88,14 +88,14 @@
     <div class="govuk-width-container">
         @if (IsSectionDefined("AppNavBar"))
         {
-            <div class="CompositeRegion">
+            <div class="CompositeUI-Region">
                 @RenderSection("AppNavBar", required: false)
             </div>
         }
 
         @if (IsSectionDefined("Breadcrumbs"))
         {
-            <div class="CompositeRegion">
+            <div class="CompositeUI-Region">
                 @RenderSection("Breadcrumbs", required: false)
             </div>
         }
@@ -103,7 +103,7 @@
         {
             if (User.Identity.IsAuthenticated)
             {
-                <div class="CompositeRegion">
+                <div class="CompositeUI-Region">
                     @RenderSection("Personalisation", required: false)
                 </div>
             }
@@ -115,7 +115,7 @@
 
         @if (IsSectionDefined("BackButton"))
         {
-            <div class="CompositeRegion">
+            <div class="CompositeUI-Region">
                 @RenderSection("BackButton", required: false)
             </div>
         }
@@ -128,7 +128,7 @@
                 <div class="govuk-grid-column-two-thirds">
                     @if (IsSectionDefined("Application"))
                     {
-                        <div class="CompositeRegion CompositeRegionScrollX">
+                        <div class="CompositeUI-Region CompositeUI-RegionScrollX">
                             @RenderSection("Application", required: false)
                         </div>
                     }
@@ -137,7 +137,7 @@
                 <div class="govuk-grid-column-one-third">
                     @if (IsSectionDefined("AppSideBar"))
                     {
-                        <div class="CompositeRegion">
+                        <div class="CompositeUI-Region">
                             @RenderSection("AppSideBar", required: false)
                         </div>
                     }
@@ -168,7 +168,7 @@
     </footer>
 
     <environment include="Development">
-        <script src="~/lib/jquery/jquery.js"></script>
+        <script src="~/lib/jquery/jquery.js" asp-append-version="true"></script>
     </environment>
     <environment exclude="Development">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
@@ -179,10 +179,10 @@
         </script>
     </environment>
 
-    <script src="~/@(Branding)/@(Branding).min.js"></script>
+    <script src="~/@(Branding)/@(Branding).min.js" asp-append-version="true"></script>
     <script>window.GOVUKFrontend.initAll()</script>
 
-    <script src="~/js/site.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
 
     @RenderSection("Scripts", required: false)
 </body>

@@ -124,6 +124,10 @@ namespace Ncs.Prototype.Web.Composition
                 .AddHttpClient<Services.IApplicationService, Services.ApplicationService, ApplicationClientOptions>(
                     Configuration,
                     nameof(ApplicationOptions.ApplicationClient)
+                )
+                .AddHttpClient<Services.IApplicationSitemapService, Services.ApplicationSitemapService, ApplicationClientOptions>(
+                    Configuration,
+                    nameof(ApplicationOptions.ApplicationClient)
                 );
         }
 
@@ -208,20 +212,27 @@ namespace Ncs.Prototype.Web.Composition
                     if (application.RequiresAuthorization)
                     {
                         routes.MapRoute(
-                             name: $"application-{application.RouteName}-Index",
-                             template: application.RouteName,
-                             defaults: new { controller = "Authorized", action = "Index", application.RouteName }
+                             name: $"Authorized-{application.RouteName}-Action",
+                             template: application.RouteName + "/{**data}",
+                             defaults: new { controller = "Authorized", action = "Action", application.RouteName }
                         );
                     }
                     else
                     {
                         routes.MapRoute(
-                            name: $"application-{application.RouteName}-Index",
-                            template: application.RouteName,
-                            defaults: new { controller = "Application", action = "Index", application.RouteName }
+                            name: $"Application-{application.RouteName}-Action",
+                             template: application.RouteName + "/{**data}",
+                            defaults: new { controller = "Application", action = "Action", application.RouteName }
                         );
                     }
                 }
+
+                // add the site map route
+                routes.MapRoute(
+                    name: "Sitemap",
+                    template: "Sitemap",
+                    defaults: new { controller = "Sitemap", action = "Sitemap" }
+                );
 
                 // add the default route
                 routes.MapRoute(

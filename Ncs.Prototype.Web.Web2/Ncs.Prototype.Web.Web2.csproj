@@ -27,6 +27,11 @@
 
 
   <ItemGroup>
+    <ProjectReference Include="..\Ncs.Prototype.Dto\Ncs.Prototype.Dto.csproj" />
+  </ItemGroup>
+
+
+  <ItemGroup>
     <WCFMetadata Include="Connected Services" />
   </ItemGroup>
 

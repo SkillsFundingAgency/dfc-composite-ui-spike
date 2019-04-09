@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Mvc;
@@ -10,6 +10,12 @@ namespace Ncs.Prototype.Web.Web2.Controllers
 {
     public class TradeController : Controller
     {
+        public const string FilterMine = "Mine";
+        public const string Filter16Plus = "16Plus";
+        public const string Filter18Plus = "18Plus";
+        public const string Filter21Plus = "21Plus";
+       public static readonly List<string> Filters = new List<string> { FilterMine, Filter16Plus, Filter18Plus, Filter21Plus };
+
         private readonly ITradeService _tradeService;
 
         public TradeController(ITradeService tradeService)
@@ -21,21 +27,12 @@ namespace Ncs.Prototype.Web.Web2.Controllers
         public IActionResult Index(string category, string filter)
         {
             var vm = new TradeIndexViewModel();
-            string city = ((string.Compare(filter, "Mine", true) == 0) ? GetCity() : string.Empty);
-            bool filter16Plus = (string.Compare(filter, "16Plus", true) == 0);
-            bool filter18Plus = (string.Compare(filter, "18Plus", true) == 0);
-            bool filter21Plus = (string.Compare(filter, "21Plus", true) == 0);
+            string city = ((string.Compare(filter, FilterMine, true) == 0) ? GetCity() : string.Empty);
+            bool filter16Plus = (string.Compare(filter, Filter16Plus, true) == 0);
+            bool filter18Plus = (string.Compare(filter, Filter18Plus, true) == 0);
+            bool filter21Plus = (string.Compare(filter, Filter21Plus, true) == 0);
 
             vm.Trades = _tradeService.GetTrades(city, category, filter16Plus, filter18Plus, filter21Plus);
-
-            if (DateTime.Now.Second >= 45)
-            {
-                throw new System.Exception("kaboom");
-            }
-            if (DateTime.Now.Second > 10 && DateTime.Now.Second < 15)
-            {
-                System.Threading.Thread.Sleep(new TimeSpan(0, 0, 13));
-            }
 
             return View(vm);
         }
