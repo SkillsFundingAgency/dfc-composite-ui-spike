@@ -16,11 +16,11 @@
                         <dd class="govuk-summary-list__value">
                             @if (application.RequiresAuthorization)
                             {
-                                <a class="govuk-link my-govuk-link" href="~/Authorized/Index?RouteName=@application.RouteName">@application.MainMenuText</a>
+                                <a class="govuk-link my-govuk-link" href="~/Authorized/@application.RouteName">@application.MainMenuText</a>
                             }
                             else
                             {
-                                <a class="govuk-link my-govuk-link" href="~/Application/Index?RouteName=@application.RouteName">@application.MainMenuText</a>
+                                <a class="govuk-link my-govuk-link" href="~/@application.RouteName">@application.MainMenuText</a>
                             }
                         </dd>
                     </div>

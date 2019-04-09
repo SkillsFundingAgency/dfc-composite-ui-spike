@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Security.Claims;
@@ -199,18 +200,20 @@ namespace Ncs.Prototype.Web.Composition.Services
         {
             var attributeNames = new string[] { "href", "action" };
             var quoteChars = new char[] { '"', '\'' };
-            string replacementRootUrl = RequestBaseUrl + $"/Application/Action?RouteName={Application.RouteName}&data=";
 
             foreach (var attributeName in attributeNames)
             {
                 foreach (var quoteChar in quoteChars)
                 {
                     var fromUrlPrefixes = new string[] { $@"{attributeName}={quoteChar}/", $@"{attributeName}={quoteChar}{Application.RootUrl}/" };
-                    string toUrlPrefix = $@"{attributeName}={quoteChar}{replacementRootUrl}/";
+                    string toUrlPrefix = $@"{attributeName}={quoteChar}{RequestBaseUrl}/";
 
                     foreach (var fromUrlPrefix in fromUrlPrefixes)
                     {
-                        responseString = responseString.Replace(fromUrlPrefix, toUrlPrefix, System.StringComparison.InvariantCultureIgnoreCase);
+                        if (responseString.Contains(fromUrlPrefix, StringComparison.InvariantCultureIgnoreCase))
+                        {
+                            responseString = responseString.Replace(fromUrlPrefix, toUrlPrefix, StringComparison.InvariantCultureIgnoreCase);
+                        }
                     }
                 }
             }

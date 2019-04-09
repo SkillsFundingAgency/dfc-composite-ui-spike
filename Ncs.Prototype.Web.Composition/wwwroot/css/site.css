@@ -54,22 +54,22 @@
 }
 
 /* Composite UI classes */
-.CompositeRegion {
+.CompositeUI-Region {
     border-color: greenyellow;
 }
 
-.CompositeChildRegion {
+.CompositeUI-ChildRegion {
     border-color: deepskyblue;
 }
 
-.CompositeRegion, .CompositeChildRegion {
+.CompositeUI-Region, .CompositeUI-ChildRegion {
     border-style: inset;
-    border-width: 2px;
+    border-width: 4px;
     margin: 2px;
     padding: 2px;
 }
 
-.CompositeRegionScrollX, .CompositeChildRegionScrollX {
+.CompositeUI-RegionScrollX, .CompositeUI-ChildRegionScrollX {
     overflow-x: auto;
 }
 

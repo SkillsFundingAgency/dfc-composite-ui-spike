@@ -36,11 +36,11 @@
                         <dd class="govuk-summary-list__value">
                             @if (application.RequiresAuthorization)
                             {
-                                <a class="govuk-link my-govuk-link" asp-area="" asp-controller="Authorized" asp-action="Index" asp-route-routeName="@application.RouteName">@application.MainMenuText</a>
+                                <a class="govuk-link my-govuk-link" href="~/Authorized/Composite/@application.RouteName">@application.MainMenuText</a>
                             }
                             else
                             {
-                                <a class="govuk-link my-govuk-link" asp-area="" asp-controller="Application" asp-action="Index" asp-route-routeName="@application.RouteName">@application.MainMenuText</a>
+                                <a class="govuk-link my-govuk-link" href="~/Composite/@application.RouteName">@application.MainMenuText</a>
                             }
                         </dd>
                     </div>

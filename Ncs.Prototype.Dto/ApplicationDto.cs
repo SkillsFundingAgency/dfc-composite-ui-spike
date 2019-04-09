@@ -11,6 +11,7 @@
         public string Description { get; set; }
         public string MainMenuText { get; set; }
         public string RouteName { get; set; }
+        public string ChildRoutePrefix { get; set; }
         public string LayoutName { get; set; }
         public bool ShowSideBar { get; set; }
         public string Branding { get; set; }

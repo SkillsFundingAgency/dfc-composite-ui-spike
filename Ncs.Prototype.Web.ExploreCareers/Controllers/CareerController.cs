@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Mvc;
 using Ncs.Prototype.Web.ExploreCareers.Models;
@@ -23,15 +22,6 @@ namespace Ncs.Prototype.Web.ExploreCareers.Controllers
             string city = GetCity();
 
             vm.Careers = _CareerService.GetCareers(city);
-
-            if (DateTime.Now.Second >= 45)
-            {
-                throw new System.Exception("kaboom");
-            }
-            if (DateTime.Now.Second > 10 && DateTime.Now.Second < 15)
-            {
-                System.Threading.Thread.Sleep(new TimeSpan(0, 0, 13));
-            }
 
             return View(vm);
         }

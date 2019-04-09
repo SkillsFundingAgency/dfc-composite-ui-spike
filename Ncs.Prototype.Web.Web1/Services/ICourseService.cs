@@ -6,6 +6,7 @@ namespace Ncs.Prototype.Web.Web1.Services
     public interface ICourseService
     {
         Course GetCourse(int id);
-        List<Course> GetCourses(string city = null, string category = null, bool filterThisMonth = false, bool filterNextMonth = false);
+        List<Course> GetCourses(string city = null, string category = null, bool filterThisMonth = false, bool filterNextMonth = false, string searchClue = null);
+        List<Category> GetCategories();
     }
 }

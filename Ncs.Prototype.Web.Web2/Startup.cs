@@ -63,6 +63,41 @@ namespace Ncs.Prototype.Web.Web2
 
             app.UseMvc(routes =>
             {
+                // add the web2 (child Trades) routing
+                routes.MapRoute(
+                    name: $"Trade-Index-Category",
+                    template: "Trade/Category/{category}",
+                    defaults: new { controller = "Trade", action = "Index" }
+                );
+                routes.MapRoute(
+                    name: $"Trade-Index-Filter",
+                    template: "Trade/Filter/{filter}",
+                    defaults: new { controller = "Trade", action = "Index" }
+                );
+                routes.MapRoute(
+                    name: $"Trade-Index",
+                    template: "Trade/Index",
+                    defaults: new { controller = "Trade", action = "Index" }
+                );
+                routes.MapRoute(
+                    name: $"Trade-Search",
+                    template: "Trade/Search/{searchClue?}",
+                    defaults: new { controller = "Trade", action = "Search" }
+                );
+                routes.MapRoute(
+                    name: $"Trade-Index-Search",
+                    template: "Trade/{searchClue}",
+                    defaults: new { controller = "Trade", action = "Index" }
+                );
+
+                // add the site map route
+                routes.MapRoute(
+                    name: "Sitemap",
+                    template: "Sitemap",
+                    defaults: new { controller = "Sitemap", action = "Sitemap" }
+                );
+
+                // add the default route
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");

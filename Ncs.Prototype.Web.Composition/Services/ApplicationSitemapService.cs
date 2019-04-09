@@ -19,8 +19,6 @@ namespace Ncs.Prototype.Web.Composition.Services
         }
 
         public string BearerToken { get; set; }
-        public string RouteName { get; set; }
-        public string RootUrl { get; set; }
         public string SitemapUrl { get; set; }
         public Task<IEnumerable<SitemapLocation>> TheTask { get; set; }
 

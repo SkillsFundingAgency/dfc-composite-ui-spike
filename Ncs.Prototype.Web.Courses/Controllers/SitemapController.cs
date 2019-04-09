@@ -12,10 +12,12 @@ namespace Ncs.Prototype.Web.Courses.Controllers
     public class SitemapController : Controller
     {
         private readonly ILogger<SitemapController> _logger;
+        private readonly ICourseService _courseService;
 
-        public SitemapController(ILogger<SitemapController> logger)
+        public SitemapController(ILogger<SitemapController> logger, ICourseService courseService)
         {
             _logger = logger;
+            _courseService = courseService;
         }
 
         [HttpGet]
@@ -25,17 +27,20 @@ namespace Ncs.Prototype.Web.Courses.Controllers
             {
                 _logger.LogInformation("Generating Sitemap");
 
-                string baseUrl = BaseUrl();
+                const string courseControllerName = "Course";
                 var sitemap = new Sitemap();
 
-                sitemap.Add(new SitemapLocation() { Url = $"{baseUrl}/Course", Priority = 1 });
+                // add the defaults
+                sitemap.Add(new SitemapLocation() { Url = Url.Action(nameof(CourseController.Index), courseControllerName, null, Request.Scheme), Priority = 1 });
+                sitemap.Add(new SitemapLocation() { Url = Url.Action(nameof(CourseController.Search), courseControllerName, null, Request.Scheme), Priority = 1 });
 
-                var filters = new List<string> { "Mine", "ThisMonth", "NextMonth" };
-                filters.ForEach(f => sitemap.Add(new SitemapLocation() { Url = $"{baseUrl}/Course?filter={f}", Priority = 1 }));
+                // add the filters
+                CourseController.Filters.ForEach(f => sitemap.Add(new SitemapLocation() { Url = Url.Action(nameof(CourseController.Index), courseControllerName, new { Filter = f }, Request.Scheme), Priority = 1 }));
 
+                // add the categories
                 var categories = GetCourseCategories();
 
-                categories.ForEach(c => sitemap.Add(new SitemapLocation() { Url = $"{baseUrl}/Course?category={c}", Priority = 1 }));
+                categories.ForEach(c => sitemap.Add(new SitemapLocation() { Url = Url.Action(nameof(CourseController.Index), courseControllerName, new { Category = c }, Request.Scheme), Priority = 1 }));
 
                 string xmlString = sitemap.WriteSitemapToString();
 
@@ -51,22 +56,14 @@ namespace Ncs.Prototype.Web.Courses.Controllers
             return null;
         }
 
-        private string BaseUrl()
-        {
-            return string.Format("{0}://{1}{2}", Request.Scheme, Request.Host, Url.Content("~"));
-        }
-
         private List<string> GetCourseCategories()
         {
-            var courseService = HttpContext.RequestServices.GetService(typeof(ICourseService)) as CourseService;
-            var courses = courseService.GetCourses();
+            var categories = _courseService.GetCategories();
 
-            var categories = courses.GroupBy(g => g.Category)
-                .Select(s => s.Key)
-                .OrderBy(o => o)
-                .ToList();
-
-            return categories;
+            var results = categories.Select(s => s.Name)
+                                    .OrderBy(o => o)
+                                    .ToList();
+            return results;
         }
     }
 }

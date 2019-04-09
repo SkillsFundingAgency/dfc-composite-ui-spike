@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using CorrelationId;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Ncs.Prototype.Web.Composition.Services;
@@ -29,36 +27,6 @@ namespace Ncs.Prototype.Web.Composition.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Index(IndexRequestViewModel requestViewModel)
-        {
-            try
-            {
-                await SetApplicationContextAsync(requestViewModel.RouteName);
-
-                if (ModelState.IsValid)
-                {
-                    await _applicationService.GetEntrypointMarkUpAsync(_pageViewModel);
-                }
-            }
-            catch (BrokenCircuitException ex)
-            {
-                string errorString = $"{_applicationService.Application.MainMenuText}: BrokenCircuit: {ex.Message}";
-
-                _logger.LogError(ex, errorString);
-                ModelState.AddModelError(string.Empty, errorString);
-            }
-            catch (Exception ex)
-            {
-                string errorString = $"{_applicationService.Application.MainMenuText}: {ex.Message}";
-
-                _logger.LogError(ex, errorString);
-                ModelState.AddModelError(string.Empty, errorString);
-            }
-
-            return View(MainRenderViewName, _pageViewModel);
-        }
-
-        [HttpGet]
         public async Task<IActionResult> Action(ActionGetRequestViewModel requestViewModel)
         {
             try
@@ -67,7 +35,12 @@ namespace Ncs.Prototype.Web.Composition.Controllers
 
                 if (ModelState.IsValid)
                 {
-                    string dataQuery = requestViewModel.Data?.Length > 0 ? string.Join("&data=", requestViewModel.Data) : "/" + requestViewModel.RouteName;
+                    string dataQuery = $"/{requestViewModel.RouteName}/{requestViewModel.Data}";
+
+                    if (!string.IsNullOrEmpty(_applicationService.Application.ChildRoutePrefix)) 
+                    {
+                        dataQuery = $"/{_applicationService.Application.ChildRoutePrefix}/{requestViewModel.Data}";
+                    }
 
                     await _applicationService.GetApplicationMarkUpAsync(dataQuery, _pageViewModel);
                 }
@@ -100,10 +73,9 @@ namespace Ncs.Prototype.Web.Composition.Controllers
 
                 if (ModelState.IsValid)
                 {
-                    string data = Request.Query["data"];
                     var formParameters = (from a in requestViewModel.FormCollection select new KeyValuePair<string, string>(a.Key, a.Value)).ToArray();
 
-                    await _applicationService.PostApplicationMarkUpAsync(_applicationService.Application.RootUrl + data, formParameters, _pageViewModel);
+                    await _applicationService.PostApplicationMarkUpAsync(_applicationService.Application.RootUrl + Request.Path, formParameters, _pageViewModel);
                 }
 
             }
@@ -146,7 +118,7 @@ namespace Ncs.Prototype.Web.Composition.Controllers
 
                 _pageViewModel = MapApplicationToPageViewModel(_applicationService.Application);
 
-                _applicationService.BearerToken = (User.Identity.IsAuthenticated ? await HttpContext.GetTokenAsync("id_token") : null);
+                _applicationService.BearerToken = await GetBearerTokenAsync();
                 _applicationService.User = User;
                 _applicationService.RequestBaseUrl = BaseUrl();
 

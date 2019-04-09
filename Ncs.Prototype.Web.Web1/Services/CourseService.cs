@@ -7,7 +7,7 @@ namespace Ncs.Prototype.Web.Web1.Services
 {
     public class CourseService : ICourseService
     {
-        private readonly List<Course> _courses;
+        private List<Course> _courses;
 
         public CourseService()
         {
@@ -103,18 +103,18 @@ namespace Ncs.Prototype.Web.Web1.Services
         }
 
 
-        public List<Course> GetCourses(string city = null, string category = null, bool filterThisMonth = false, bool filterNextMonth = false)
+        public List<Course> GetCourses(string city = null, string category = null, bool filterThisMonth = false, bool filterNextMonth = false, string searchClue = null)
         {
             var results = _courses;
 
             if (!string.IsNullOrEmpty(city))
             {
-                results = results.Where(x => x.City == city).ToList();
+                results = results.Where(x => string.Compare(x.City, city, true) == 0).ToList();
             }
 
             if (!string.IsNullOrEmpty(category))
             {
-                results = results.Where(x => x.Category == category).ToList();
+                results = results.Where(x => string.Compare(x.Category, category, true) == 0).ToList();
             }
 
             if (filterThisMonth)
@@ -129,12 +129,33 @@ namespace Ncs.Prototype.Web.Web1.Services
                 results = results.Where(x => x.Start.Year == testDate.Year && x.Start.Month == testDate.Month).ToList();
             }
 
+            if (!string.IsNullOrEmpty(searchClue))
+            {
+                results = results.Where(x => x.Description.IndexOf(searchClue, StringComparison.InvariantCultureIgnoreCase) >= 0).ToList();
+            }
+
             return results;
         }
 
         public Course GetCourse(int id)
         {
             return _courses.FirstOrDefault(x => x.Id == id);
+        }
+
+        public List<Category> GetCategories()
+        {
+            var courses = GetCourses();
+            var categories = courses.GroupBy(g => g.Category)
+                                    .Select(s => new Data.Category()
+                                    {
+                                        Name = s.Key,
+                                        CourseCount = s.Count()
+                                    }
+                                    )
+                                    .OrderBy(o => o.Name)
+                                    .ToList();
+
+            return categories;
         }
     }
 }

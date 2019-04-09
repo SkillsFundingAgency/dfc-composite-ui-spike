@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using CorrelationId;
-using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Ncs.Prototype.Dto;
 using Ncs.Prototype.Dto.Sitemap;
 using Ncs.Prototype.Web.Composition.Services;
 using Polly.CircuitBreaker;
@@ -28,21 +28,10 @@ namespace Ncs.Prototype.Web.Composition.Controllers
             {
                 _logger.LogInformation("Generating Sitemap");
 
-                string baseUrl = BaseUrl();
-                var sitemap = new Dto.Sitemap.Sitemap();
-
-                // output the composite UI site maps
-                sitemap.Add(new SitemapLocation() { Url = $"{baseUrl}", Priority = 1 });
-                sitemap.Add(new SitemapLocation() { Url = $"{baseUrl}/home", Priority = 1 });
-                sitemap.Add(new SitemapLocation() { Url = $"{baseUrl}/home/privacy", Priority = 1 });
+                var sitemap = GenerateThisSiteSitemap();
 
                 // get all the registered application site maps
-                var applicationsSitemap = await GetApplicationSitemapsAsync();
-
-                if (applicationsSitemap?.Locations.Count() > 0)
-                {
-                    sitemap.AddRange(applicationsSitemap.Locations);
-                }
+                await GetApplicationSitemapsAsync(sitemap);
 
                 string xmlString = sitemap.WriteSitemapToString();
 
@@ -62,34 +51,57 @@ namespace Ncs.Prototype.Web.Composition.Controllers
             return null;
         }
 
-        private async Task<Dto.Sitemap.Sitemap> GetApplicationSitemapsAsync()
+        private Sitemap GenerateThisSiteSitemap()
+        {
+            const string homeControllerName = "Home";
+            var sitemap = new Sitemap();
+
+            // output the composite UI site maps
+            sitemap.Add(new SitemapLocation() { Url = Url.Action(nameof(HomeController.Index), homeControllerName, null, Request.Scheme), Priority = 1 });
+            sitemap.Add(new SitemapLocation() { Url = Url.Action(nameof(HomeController.Privacy), homeControllerName, null, Request.Scheme), Priority = 1 });
+
+            return sitemap;
+        }
+
+        private async Task GetApplicationSitemapsAsync(Sitemap sitemap)
         {
             // loop through the registered applications and create some tasks - one per application that has a sitemap url
-            string baseUrl = BaseUrl();
-            var applicationSitemapServices = new List<IApplicationSitemapService>();
             var applications = await _applicationManagementService.GetApplications();
+            var applicationSitemapServices = await CreateApplicationSitemapServiceTasksAsync(applications);
+
+            // await all application sitemap service tasks to complete
+            var allTasks = (from a in applicationSitemapServices select a.TheTask).ToArray();
+
+            await Task.WhenAll(allTasks);
+
+            OutputApplicationsSitemaps(sitemap, applications, applicationSitemapServices);
+        }
+
+        private async Task<List<IApplicationSitemapService>> CreateApplicationSitemapServiceTasksAsync(List<ApplicationDto> applications)
+        {
+            // loop through the registered applications and create some tasks - one per application that has a sitemap url
+            var applicationSitemapServices = new List<IApplicationSitemapService>();
+            string bearerToken = await GetBearerTokenAsync();
 
             foreach (var application in applications.Where(w => !string.IsNullOrEmpty(w.SitemapUrl)))
             {
                 var applicationSitemapService = HttpContext.RequestServices.GetService(typeof(IApplicationSitemapService)) as ApplicationSitemapService;
 
-                applicationSitemapService.BearerToken = (User.Identity.IsAuthenticated ? await HttpContext.GetTokenAsync("id_token") : null); ;
-                applicationSitemapService.RouteName = application.RouteName;
-                applicationSitemapService.RootUrl = application.RootUrl;
+                applicationSitemapService.BearerToken = bearerToken;
                 applicationSitemapService.SitemapUrl = application.SitemapUrl;
                 applicationSitemapService.TheTask = applicationSitemapService.GetAsync();
 
                 applicationSitemapServices.Add(applicationSitemapService);
             }
 
-            // await all tasks to complete
-            var allTasks = (from a in applicationSitemapServices select a.TheTask).ToArray();
+            return applicationSitemapServices;
+        }
 
-            await Task.WhenAll(allTasks);
+        private void OutputApplicationsSitemaps(Sitemap sitemap, List<ApplicationDto> applications, List<IApplicationSitemapService> applicationSitemapServices)
+        {
+            string baseUrl = BaseUrl();
 
             // get the task results as individual sitemaps and merge into one
-            var results = new Dto.Sitemap.Sitemap();
-
             foreach (var applicationSiteMap in applicationSitemapServices)
             {
                 if (applicationSiteMap.TheTask.IsCompletedSuccessfully)
@@ -100,17 +112,20 @@ namespace Ncs.Prototype.Web.Composition.Controllers
                     {
                         foreach (var mapping in mappings)
                         {
-                            // rewrite the URL to swap the child application address for the composite UI address
-                            mapping.Url = mapping.Url.Replace(applicationSiteMap.RootUrl, $"{baseUrl}/Application/Action?RouteName={applicationSiteMap.RouteName}&data=", StringComparison.InvariantCultureIgnoreCase);
+                            // rewrite the URL to swap any child application address prefix for the composite UI address prefix
+                            foreach (var application in applications)
+                            {
+                                if (mapping.Url.StartsWith(application.RootUrl,StringComparison.InvariantCultureIgnoreCase))
+                                {
+                                    mapping.Url = mapping.Url.Replace(application.RootUrl, baseUrl, StringComparison.InvariantCultureIgnoreCase);
+                                }
+                            }
                         }
 
-                        results.AddRange(mappings);
+                        sitemap.AddRange(mappings);
                     }
                 }
             }
-
-            return results;
         }
-
     }
 }

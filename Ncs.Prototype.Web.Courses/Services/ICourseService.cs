@@ -7,5 +7,6 @@ namespace Ncs.Prototype.Web.Courses.Services
     {
         Course GetCourse(int id);
         List<Course> GetCourses(string city = null, string category = null, bool filterThisMonth = false, bool filterNextMonth = false, string searchClue = null);
+        List<Category> GetCategories();
     }
 }

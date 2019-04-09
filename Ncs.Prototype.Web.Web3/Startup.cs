@@ -140,6 +140,14 @@ namespace Ncs.Prototype.Web.Web3
 
             app.UseMvc(routes =>
             {
+                // add the site map route
+                routes.MapRoute(
+                    name: "Sitemap",
+                    template: "Sitemap",
+                    defaults: new { controller = "Sitemap", action = "Sitemap" }
+                );
+
+                // add the default route
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");

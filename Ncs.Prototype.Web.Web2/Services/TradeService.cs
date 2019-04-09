@@ -132,5 +132,21 @@ namespace Ncs.Prototype.Web.Web2.Services
         {
             return _trades.FirstOrDefault(x => x.Id == id);
         }
+
+        public List<Category> GetCategories()
+        {
+            var trades = GetTrades();
+            var categories = trades.GroupBy(g => g.Category)
+                                   .Select(s => new Category()
+                                   {
+                                       Name = s.Key,
+                                       TradeCount = s.Count()
+                                   }
+                                   )
+                                   .OrderBy(o => o.Name)
+                                   .ToList();
+
+            return categories;
+        }
     }
 }

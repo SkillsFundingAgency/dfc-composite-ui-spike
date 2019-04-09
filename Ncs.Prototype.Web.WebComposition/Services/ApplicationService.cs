@@ -1,20 +1,24 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Html;
+using Microsoft.Extensions.Options;
 
 namespace Ncs.Prototype.Web.WebComposition.Services
 {
     public class ApplicationService : IApplicationService
     {
         private readonly HttpClient _httpClient;
+        private readonly Dto.ApplicationDto _thisCompositeApplication;
 
-        public ApplicationService(HttpClient httpClient)
+        public ApplicationService(HttpClient httpClient, IOptions<Dto.ApplicationDto> thisCompositeApplication)
         {
             _httpClient = httpClient;
+            _thisCompositeApplication = thisCompositeApplication.Value;
         }
 
         public Dto.ApplicationDto Application { get; set; }
@@ -199,18 +203,20 @@ namespace Ncs.Prototype.Web.WebComposition.Services
         {
             var attributeNames = new string[] { "href", "action" };
             var quoteChars = new char[] { '"', '\'' };
-            string replacementRootUrl = RequestBaseUrl + $"/Application/Action?RouteName={Application.RouteName}&data=";
 
             foreach (var attributeName in attributeNames)
             {
                 foreach (var quoteChar in quoteChars)
                 {
                     var fromUrlPrefixes = new string[] { $@"{attributeName}={quoteChar}/", $@"{attributeName}={quoteChar}{Application.RootUrl}/" };
-                    string toUrlPrefix = $@"{attributeName}={quoteChar}{replacementRootUrl}/";
+                    string toUrlPrefix = $@"{attributeName}={quoteChar}{RequestBaseUrl}/{_thisCompositeApplication.ChildRoutePrefix}/"; 
 
                     foreach (var fromUrlPrefix in fromUrlPrefixes)
                     {
-                        responseString = responseString.Replace(fromUrlPrefix, toUrlPrefix, System.StringComparison.InvariantCultureIgnoreCase);
+                        if (responseString.Contains(fromUrlPrefix, StringComparison.InvariantCultureIgnoreCase))
+                        {
+                            responseString = responseString.Replace(fromUrlPrefix, toUrlPrefix, StringComparison.InvariantCultureIgnoreCase);
+                        }
                     }
                 }
             }

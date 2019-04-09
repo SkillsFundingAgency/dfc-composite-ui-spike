@@ -438,3 +438,1112 @@
 03/04/2019 16:30:05 CosmosDBObserver ProcessChangesAsync 
 03/04/2019 16:30:05 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
 03/04/2019 16:30:05 CosmosDBHostedBackgroundService after StartAsync 
+03/04/2019 16:40:27 CosmosDBHostedBackgroundService Constructor 
+03/04/2019 16:40:27 CosmosDBHostedBackgroundService ExecuteAsync 
+03/04/2019 16:40:28 CosmosDBHostedBackgroundService before StartAsync 
+03/04/2019 16:40:29 CosmosDBObserverFactory CreateObserver 
+03/04/2019 16:40:29 CosmosDBObserver OpenAsync.0 
+03/04/2019 16:40:29 CosmosDBObserver ProcessChangesAsync 
+03/04/2019 16:40:29 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+03/04/2019 16:40:29 CosmosDBHostedBackgroundService System.IO.IOException: The process cannot access the file 'D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\applog.txt' because it is being used by another process.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendAllText(String path, String contents)
+   at Ncs.Prototype.Web.Composition.Loggers.FileLog.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\Loggers\FileLog.cs:line 19
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 81
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.ExecuteAsync(CancellationToken stoppingToken) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 63 
+04/04/2019 09:16:55 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 09:16:55 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 09:16:56 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 09:16:57 CosmosDBObserverFactory CreateObserver 
+04/04/2019 09:16:57 CosmosDBObserver OpenAsync.0 
+04/04/2019 09:16:57 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 09:17:07 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 09:17:07 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 09:29:44 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 09:29:44 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 09:29:45 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 09:29:46 CosmosDBObserverFactory CreateObserver 
+04/04/2019 09:29:46 CosmosDBObserver OpenAsync.0 
+04/04/2019 09:29:46 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 09:29:46 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 09:29:46 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 09:55:52 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 09:55:52 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 09:59:33 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 09:59:33 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 10:01:45 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 10:01:45 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 10:13:09 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 10:13:09 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 10:13:10 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 10:13:11 CosmosDBObserverFactory CreateObserver 
+04/04/2019 10:13:11 CosmosDBObserver OpenAsync.0 
+04/04/2019 10:13:11 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 10:14:13 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 10:14:13 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 10:14:26 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 10:14:26 CosmosDBObserverFactory CreateObserver 
+04/04/2019 10:14:26 CosmosDBObserver OpenAsync.0 
+04/04/2019 10:14:26 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 10:15:21 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 10:15:21 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 10:15:40 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 10:15:40 CosmosDBObserverFactory CreateObserver 
+04/04/2019 10:15:40 CosmosDBObserver OpenAsync.0 
+04/04/2019 10:15:40 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 10:17:53 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 10:17:54 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 10:17:54 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 10:17:55 CosmosDBObserverFactory CreateObserver 
+04/04/2019 10:17:55 CosmosDBObserver OpenAsync.0 
+04/04/2019 10:17:55 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 10:18:54 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 10:18:54 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 10:19:08 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 10:19:09 CosmosDBObserverFactory CreateObserver 
+04/04/2019 10:19:09 CosmosDBObserver OpenAsync.0 
+04/04/2019 10:19:09 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 10:22:29 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 10:22:29 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 10:29:36 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 10:29:36 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 10:30:09 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 10:30:28 CosmosDBObserverFactory CreateObserver 
+04/04/2019 10:30:28 CosmosDBObserver OpenAsync.0 
+04/04/2019 10:30:29 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 10:35:21 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 10:35:21 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 10:35:40 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 10:35:41 CosmosDBObserverFactory CreateObserver 
+04/04/2019 10:35:41 CosmosDBObserver OpenAsync.0 
+04/04/2019 10:35:41 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 10:40:28 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 10:40:28 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 10:40:31 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 10:40:32 CosmosDBObserverFactory CreateObserver 
+04/04/2019 10:40:32 CosmosDBObserver OpenAsync.0 
+04/04/2019 10:40:32 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 10:42:12 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 10:42:12 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 10:42:13 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 10:42:26 CosmosDBObserverFactory CreateObserver 
+04/04/2019 10:42:26 CosmosDBObserver OpenAsync.0 
+04/04/2019 10:42:26 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 10:47:27 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 10:47:27 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 10:47:28 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 10:47:30 CosmosDBObserverFactory CreateObserver 
+04/04/2019 10:47:30 CosmosDBObserver OpenAsync.0 
+04/04/2019 10:47:30 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 10:50:01 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 10:50:01 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 10:50:04 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 10:50:04 CosmosDBObserverFactory CreateObserver 
+04/04/2019 10:50:04 CosmosDBObserver OpenAsync.0 
+04/04/2019 10:50:04 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 10:55:57 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 10:55:57 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 10:55:58 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 10:56:06 CosmosDBObserverFactory CreateObserver 
+04/04/2019 10:56:06 CosmosDBObserver OpenAsync.0 
+04/04/2019 10:56:06 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 11:07:08 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 11:07:09 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 11:07:09 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 11:07:22 CosmosDBObserverFactory CreateObserver 
+04/04/2019 11:07:23 CosmosDBObserver OpenAsync.0 
+04/04/2019 11:07:23 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 11:13:13 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 11:13:13 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 11:13:13 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 11:13:20 CosmosDBObserverFactory CreateObserver 
+04/04/2019 11:13:20 CosmosDBObserver OpenAsync.0 
+04/04/2019 11:13:20 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 11:13:20 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 11:13:20 CosmosDBHostedBackgroundService System.IO.IOException: The process cannot access the file 'D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\applog.txt' because it is being used by another process.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendAllText(String path, String contents)
+   at Ncs.Prototype.Web.Composition.Loggers.FileLog.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\Loggers\FileLog.cs:line 19
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 81
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.ExecuteAsync(CancellationToken stoppingToken) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 63 
+04/04/2019 11:16:03 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 11:16:04 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 11:16:04 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 11:17:46 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 11:17:46 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 11:17:46 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 11:17:50 CosmosDBObserverFactory CreateObserver 
+04/04/2019 11:17:50 CosmosDBObserver OpenAsync.0 
+04/04/2019 11:17:50 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 11:17:51 CosmosDBObserver CloseAsync.ObserverError 
+04/04/2019 11:18:04 CosmosDBObserverFactory CreateObserver 
+04/04/2019 11:18:04 CosmosDBObserver OpenAsync.0 
+04/04/2019 11:18:04 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 11:18:04 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 11:27:41 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 11:27:41 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 11:28:33 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 11:28:44 CosmosDBObserverFactory CreateObserver 
+04/04/2019 11:28:44 CosmosDBObserver OpenAsync.0 
+04/04/2019 11:28:44 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 11:28:44 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 11:28:44 CosmosDBHostedBackgroundService System.IO.IOException: The process cannot access the file 'D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\applog.txt' because it is being used by another process.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendAllText(String path, String contents)
+   at Ncs.Prototype.Web.Composition.Loggers.FileLog.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\Loggers\FileLog.cs:line 19
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 81
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.ExecuteAsync(CancellationToken stoppingToken) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 63 
+04/04/2019 11:36:36 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 11:36:36 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 11:47:27 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 11:47:28 CosmosDBObserverFactory CreateObserver 
+04/04/2019 11:47:28 CosmosDBObserver OpenAsync.0 
+04/04/2019 11:47:28 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 11:47:28 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 11:47:28 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 11:49:03 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 11:49:03 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 11:50:54 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 11:51:12 CosmosDBObserverFactory CreateObserver 
+04/04/2019 11:51:12 CosmosDBObserver OpenAsync.0 
+04/04/2019 11:51:13 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 11:51:13 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 11:51:13 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 12:06:08 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 12:06:08 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 12:06:14 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 12:06:19 CosmosDBObserverFactory CreateObserver 
+04/04/2019 12:06:19 CosmosDBObserver OpenAsync.0 
+04/04/2019 12:06:19 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 12:06:19 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 12:06:19 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 12:10:23 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 12:10:23 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 12:10:24 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 12:10:24 CosmosDBObserverFactory CreateObserver 
+04/04/2019 12:10:24 CosmosDBObserver OpenAsync.0 
+04/04/2019 12:10:24 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 12:10:24 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 12:10:24 CosmosDBHostedBackgroundService System.IO.IOException: The process cannot access the file 'D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\applog.txt' because it is being used by another process.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendAllText(String path, String contents)
+   at Ncs.Prototype.Web.Composition.Loggers.FileLog.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\Loggers\FileLog.cs:line 19
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 81
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.ExecuteAsync(CancellationToken stoppingToken) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 63 
+04/04/2019 12:21:03 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 12:21:03 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 12:21:04 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 12:21:05 CosmosDBObserverFactory CreateObserver 
+04/04/2019 12:21:05 CosmosDBObserver OpenAsync.0 
+04/04/2019 12:21:05 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 12:21:05 CosmosDBObserver CloseAsync.ObserverError 
+04/04/2019 12:21:18 CosmosDBObserverFactory CreateObserver 
+04/04/2019 12:21:18 CosmosDBObserver OpenAsync.0 
+04/04/2019 12:21:18 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 12:21:18 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 12:31:06 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 12:31:06 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 12:31:07 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 12:31:07 CosmosDBObserverFactory CreateObserver 
+04/04/2019 12:31:07 CosmosDBObserver OpenAsync.0 
+04/04/2019 12:31:07 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 12:31:07 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 12:31:07 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 12:32:37 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 12:32:37 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 12:40:28 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 12:40:28 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 12:40:31 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 12:40:31 CosmosDBObserverFactory CreateObserver 
+04/04/2019 12:40:31 CosmosDBObserver OpenAsync.0 
+04/04/2019 12:40:33 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 12:45:13 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 12:45:13 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 12:45:14 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 12:45:14 CosmosDBObserverFactory CreateObserver 
+04/04/2019 12:45:15 CosmosDBObserver OpenAsync.0 
+04/04/2019 12:46:14 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 12:46:14 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 12:46:14 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 12:50:48 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 12:50:48 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 13:36:24 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 13:36:24 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 13:36:25 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 13:36:25 CosmosDBObserverFactory CreateObserver 
+04/04/2019 13:36:25 CosmosDBObserver OpenAsync.0 
+04/04/2019 13:36:25 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 13:36:25 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 13:36:25 CosmosDBHostedBackgroundService System.IO.IOException: The process cannot access the file 'D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\applog.txt' because it is being used by another process.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendAllText(String path, String contents)
+   at Ncs.Prototype.Web.Composition.Loggers.FileLog.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\Loggers\FileLog.cs:line 19
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 81
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.ExecuteAsync(CancellationToken stoppingToken) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 63 
+04/04/2019 13:39:50 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 13:39:50 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 13:39:51 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 13:39:53 CosmosDBObserverFactory CreateObserver 
+04/04/2019 13:39:53 CosmosDBObserver OpenAsync.0 
+04/04/2019 13:39:53 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 13:39:54 CosmosDBObserver CloseAsync.ObserverError 
+04/04/2019 13:40:07 CosmosDBObserverFactory CreateObserver 
+04/04/2019 13:40:07 CosmosDBObserver OpenAsync.0 
+04/04/2019 13:40:07 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 13:40:07 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 13:45:00 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 13:45:00 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 13:45:00 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 13:45:03 CosmosDBObserverFactory CreateObserver 
+04/04/2019 13:45:03 CosmosDBObserver OpenAsync.0 
+04/04/2019 13:45:03 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 13:45:03 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 13:45:04 CosmosDBHostedBackgroundService System.IO.IOException: The process cannot access the file 'D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\applog.txt' because it is being used by another process.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendAllText(String path, String contents)
+   at Ncs.Prototype.Web.Composition.Loggers.FileLog.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\Loggers\FileLog.cs:line 19
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 81
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.ExecuteAsync(CancellationToken stoppingToken) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 63 
+04/04/2019 13:47:25 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 13:47:25 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 13:47:26 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 13:47:29 CosmosDBObserverFactory CreateObserver 
+04/04/2019 13:47:29 CosmosDBObserver OpenAsync.0 
+04/04/2019 13:47:29 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 13:47:29 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 13:47:29 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 13:51:14 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 13:51:14 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 13:51:14 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 13:51:17 CosmosDBObserverFactory CreateObserver 
+04/04/2019 13:51:17 CosmosDBObserver OpenAsync.0 
+04/04/2019 13:51:17 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 13:51:17 CosmosDBObserver CloseAsync.ObserverError 
+04/04/2019 13:51:30 CosmosDBObserverFactory CreateObserver 
+04/04/2019 13:51:30 CosmosDBObserver OpenAsync.0 
+04/04/2019 13:51:30 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 13:51:30 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 13:53:30 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 13:53:30 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 13:53:31 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 13:53:37 CosmosDBObserverFactory CreateObserver 
+04/04/2019 13:53:37 CosmosDBObserver OpenAsync.0 
+04/04/2019 13:53:37 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 13:53:37 CosmosDBObserver CloseAsync.ObserverError 
+04/04/2019 13:53:50 CosmosDBObserverFactory CreateObserver 
+04/04/2019 13:53:50 CosmosDBObserver OpenAsync.0 
+04/04/2019 13:53:50 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 13:53:50 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 13:55:53 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 13:55:53 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 13:55:54 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 13:55:55 CosmosDBObserverFactory CreateObserver 
+04/04/2019 13:55:55 CosmosDBObserver OpenAsync.0 
+04/04/2019 13:55:55 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 13:55:56 CosmosDBObserver CloseAsync.ObserverError 
+04/04/2019 13:56:09 CosmosDBObserverFactory CreateObserver 
+04/04/2019 13:56:09 CosmosDBObserver OpenAsync.0 
+04/04/2019 13:56:09 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 13:56:09 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 13:59:27 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 13:59:27 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 13:59:28 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 13:59:29 CosmosDBObserverFactory CreateObserver 
+04/04/2019 13:59:29 CosmosDBObserver OpenAsync.0 
+04/04/2019 13:59:29 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 13:59:29 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 13:59:29 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 14:05:20 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 14:05:20 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 14:05:21 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 14:05:24 CosmosDBObserverFactory CreateObserver 
+04/04/2019 14:05:24 CosmosDBObserver OpenAsync.0 
+04/04/2019 14:05:24 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 14:05:24 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 14:05:24 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 14:08:52 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 14:08:52 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 14:08:53 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 14:08:56 CosmosDBObserverFactory CreateObserver 
+04/04/2019 14:08:56 CosmosDBObserver OpenAsync.0 
+04/04/2019 14:08:56 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 14:08:56 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 14:08:56 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 14:16:55 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 14:16:55 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 14:16:56 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 14:16:58 CosmosDBObserverFactory CreateObserver 
+04/04/2019 14:16:58 CosmosDBObserver OpenAsync.0 
+04/04/2019 14:16:58 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 14:16:58 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 14:16:58 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 14:18:38 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 14:18:38 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 14:18:39 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 14:18:41 CosmosDBObserverFactory CreateObserver 
+04/04/2019 14:18:41 CosmosDBObserver OpenAsync.0 
+04/04/2019 14:18:41 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 14:18:41 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 14:18:41 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 14:20:38 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 14:20:38 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 14:20:39 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 14:20:41 CosmosDBObserverFactory CreateObserver 
+04/04/2019 14:20:41 CosmosDBObserver OpenAsync.0 
+04/04/2019 14:20:41 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 14:22:39 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 14:22:39 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 14:22:40 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 14:22:43 CosmosDBObserverFactory CreateObserver 
+04/04/2019 14:22:43 CosmosDBObserver OpenAsync.0 
+04/04/2019 14:22:44 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 14:23:31 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 14:23:31 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 14:23:33 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 14:23:34 CosmosDBObserverFactory CreateObserver 
+04/04/2019 14:23:34 CosmosDBObserver OpenAsync.0 
+04/04/2019 14:23:34 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 14:23:34 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+04/04/2019 14:23:34 CosmosDBHostedBackgroundService System.IO.IOException: The process cannot access the file 'D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\applog.txt' because it is being used by another process.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendAllText(String path, String contents)
+   at Ncs.Prototype.Web.Composition.Loggers.FileLog.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\Loggers\FileLog.cs:line 19
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 81
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.ExecuteAsync(CancellationToken stoppingToken) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 63 
+04/04/2019 14:30:56 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 14:30:56 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 14:30:57 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 14:30:58 CosmosDBObserverFactory CreateObserver 
+04/04/2019 14:30:58 CosmosDBObserver OpenAsync.0 
+04/04/2019 14:30:58 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 14:33:15 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 14:33:15 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 14:33:16 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 14:33:18 CosmosDBObserverFactory CreateObserver 
+04/04/2019 14:33:18 CosmosDBObserver OpenAsync.0 
+04/04/2019 14:33:18 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 14:47:34 CosmosDBHostedBackgroundService Constructor 
+04/04/2019 14:47:34 CosmosDBHostedBackgroundService ExecuteAsync 
+04/04/2019 14:47:35 CosmosDBHostedBackgroundService before StartAsync 
+04/04/2019 14:47:36 CosmosDBObserverFactory CreateObserver 
+04/04/2019 14:47:36 CosmosDBObserver OpenAsync.0 
+04/04/2019 14:47:36 CosmosDBHostedBackgroundService after StartAsync 
+04/04/2019 14:49:40 CosmosDBObserver ProcessChangesAsync 
+04/04/2019 14:49:40 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 08:48:49 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 08:48:49 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 08:48:50 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 08:48:59 CosmosDBObserverFactory CreateObserver 
+05/04/2019 08:48:59 CosmosDBObserver OpenAsync.0 
+05/04/2019 08:48:59 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 08:48:59 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 08:48:59 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 08:55:22 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 08:55:22 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 08:55:25 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 08:55:26 CosmosDBObserverFactory CreateObserver 
+05/04/2019 08:55:26 CosmosDBObserver OpenAsync.0 
+05/04/2019 08:55:26 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 08:55:26 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 08:55:26 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 08:58:19 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 08:58:20 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 08:58:20 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 08:58:23 CosmosDBObserverFactory CreateObserver 
+05/04/2019 08:58:23 CosmosDBObserver OpenAsync.0 
+05/04/2019 08:58:23 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 08:58:23 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 08:58:23 CosmosDBHostedBackgroundService System.IO.IOException: The process cannot access the file 'D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\applog.txt' because it is being used by another process.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendAllText(String path, String contents)
+   at Ncs.Prototype.Web.Composition.Loggers.FileLog.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\Loggers\FileLog.cs:line 19
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 81
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.ExecuteAsync(CancellationToken stoppingToken) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 63 
+05/04/2019 09:02:59 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 09:02:59 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 09:03:17 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 09:03:17 CosmosDBObserverFactory CreateObserver 
+05/04/2019 09:03:17 CosmosDBObserver OpenAsync.0 
+05/04/2019 09:03:18 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 09:03:18 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 09:03:18 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 09:04:18 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 09:04:18 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 09:04:19 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 09:04:20 CosmosDBObserverFactory CreateObserver 
+05/04/2019 09:04:20 CosmosDBObserver OpenAsync.0 
+05/04/2019 09:04:20 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 09:04:20 CosmosDBObserver CloseAsync.ObserverError 
+05/04/2019 09:04:59 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 09:04:59 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 09:05:00 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 09:05:01 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 09:05:01 CosmosDBObserverFactory CreateObserver 
+05/04/2019 09:05:01 CosmosDBObserver OpenAsync.0 
+05/04/2019 09:05:01 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 09:05:01 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 09:06:27 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 09:06:27 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 09:06:29 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 09:06:30 CosmosDBObserverFactory CreateObserver 
+05/04/2019 09:06:30 CosmosDBObserver OpenAsync.0 
+05/04/2019 09:06:30 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 09:06:30 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 09:06:30 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 09:08:57 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 09:08:57 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 09:08:58 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 09:09:05 CosmosDBObserverFactory CreateObserver 
+05/04/2019 09:09:05 CosmosDBObserver OpenAsync.0 
+05/04/2019 09:09:05 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 09:09:05 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 09:09:06 CosmosDBHostedBackgroundService System.IO.IOException: The process cannot access the file 'D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\applog.txt' because it is being used by another process.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendAllText(String path, String contents)
+   at Ncs.Prototype.Web.Composition.Loggers.FileLog.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\Loggers\FileLog.cs:line 19
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 81
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.ExecuteAsync(CancellationToken stoppingToken) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 63 
+05/04/2019 09:12:08 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 09:12:08 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 09:12:21 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 09:12:22 CosmosDBObserverFactory CreateObserver 
+05/04/2019 09:12:22 CosmosDBObserver OpenAsync.0 
+05/04/2019 09:12:22 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 09:12:23 CosmosDBObserver CloseAsync.ObserverError 
+05/04/2019 09:12:36 CosmosDBObserverFactory CreateObserver 
+05/04/2019 09:12:36 CosmosDBObserver OpenAsync.0 
+05/04/2019 09:12:36 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 09:12:36 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 09:14:29 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 09:14:29 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 09:14:30 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 09:14:31 CosmosDBObserverFactory CreateObserver 
+05/04/2019 09:14:31 CosmosDBObserver OpenAsync.0 
+05/04/2019 09:14:31 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 09:14:31 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 09:14:31 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 09:15:30 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 09:15:30 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 09:15:31 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 09:15:32 CosmosDBObserverFactory CreateObserver 
+05/04/2019 09:15:32 CosmosDBObserver OpenAsync.0 
+05/04/2019 09:15:32 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 09:15:32 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 09:15:32 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 09:17:34 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 09:17:34 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 09:17:35 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 09:17:36 CosmosDBObserverFactory CreateObserver 
+05/04/2019 09:17:36 CosmosDBObserver OpenAsync.0 
+05/04/2019 09:17:36 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 09:17:37 CosmosDBObserver CloseAsync.ObserverError 
+05/04/2019 09:17:49 CosmosDBObserverFactory CreateObserver 
+05/04/2019 09:17:49 CosmosDBObserver OpenAsync.0 
+05/04/2019 09:17:49 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 09:17:49 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 09:19:49 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 09:19:49 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 09:19:51 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 09:19:52 CosmosDBObserverFactory CreateObserver 
+05/04/2019 09:19:52 CosmosDBObserver OpenAsync.0 
+05/04/2019 09:19:52 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 09:19:53 CosmosDBObserver CloseAsync.ObserverError 
+05/04/2019 09:20:06 CosmosDBObserverFactory CreateObserver 
+05/04/2019 09:20:06 CosmosDBObserver OpenAsync.0 
+05/04/2019 09:20:06 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 09:20:06 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 09:22:00 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 09:22:00 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 09:22:01 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 09:22:02 CosmosDBObserverFactory CreateObserver 
+05/04/2019 09:22:02 CosmosDBObserver OpenAsync.0 
+05/04/2019 09:22:02 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 09:22:02 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 09:22:02 CosmosDBHostedBackgroundService System.IO.IOException: The process cannot access the file 'D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\applog.txt' because it is being used by another process.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendAllText(String path, String contents)
+   at Ncs.Prototype.Web.Composition.Loggers.FileLog.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\Loggers\FileLog.cs:line 19
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 81
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.ExecuteAsync(CancellationToken stoppingToken) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 63 
+05/04/2019 09:23:22 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 09:23:22 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 09:23:23 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 09:23:24 CosmosDBObserverFactory CreateObserver 
+05/04/2019 09:23:24 CosmosDBObserver OpenAsync.0 
+05/04/2019 09:23:24 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 09:23:24 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 09:23:24 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 09:26:35 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 09:26:35 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 09:26:36 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 09:26:37 CosmosDBObserverFactory CreateObserver 
+05/04/2019 09:26:37 CosmosDBObserver OpenAsync.0 
+05/04/2019 09:26:37 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 09:26:37 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 09:26:37 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 09:30:09 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 09:30:09 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 09:30:10 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 09:30:11 CosmosDBObserverFactory CreateObserver 
+05/04/2019 09:30:11 CosmosDBObserver OpenAsync.0 
+05/04/2019 09:30:11 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 09:30:11 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 09:30:11 CosmosDBHostedBackgroundService System.IO.IOException: The process cannot access the file 'D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\applog.txt' because it is being used by another process.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendAllText(String path, String contents)
+   at Ncs.Prototype.Web.Composition.Loggers.FileLog.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\Loggers\FileLog.cs:line 19
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 81
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.ExecuteAsync(CancellationToken stoppingToken) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 63 
+05/04/2019 09:39:12 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 09:39:12 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 09:39:13 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 09:39:13 CosmosDBObserverFactory CreateObserver 
+05/04/2019 09:39:13 CosmosDBObserver OpenAsync.0 
+05/04/2019 09:39:13 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 09:39:14 CosmosDBObserver CloseAsync.ObserverError 
+05/04/2019 09:39:27 CosmosDBObserverFactory CreateObserver 
+05/04/2019 09:39:27 CosmosDBObserver OpenAsync.0 
+05/04/2019 09:39:27 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 09:39:27 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 09:44:28 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 09:44:28 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 09:44:29 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 09:44:30 CosmosDBObserverFactory CreateObserver 
+05/04/2019 09:44:30 CosmosDBObserver OpenAsync.0 
+05/04/2019 09:44:30 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 09:44:30 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 09:44:30 CosmosDBHostedBackgroundService System.IO.IOException: The process cannot access the file 'D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\applog.txt' because it is being used by another process.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendAllText(String path, String contents)
+   at Ncs.Prototype.Web.Composition.Loggers.FileLog.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\Loggers\FileLog.cs:line 19
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 81
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.ExecuteAsync(CancellationToken stoppingToken) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 63 
+05/04/2019 09:48:33 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 09:48:33 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 09:48:34 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 09:48:35 CosmosDBObserverFactory CreateObserver 
+05/04/2019 09:48:35 CosmosDBObserver OpenAsync.0 
+05/04/2019 09:48:35 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 09:48:35 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 09:48:35 CosmosDBHostedBackgroundService System.IO.IOException: The process cannot access the file 'D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\applog.txt' because it is being used by another process.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendAllText(String path, String contents)
+   at Ncs.Prototype.Web.Composition.Loggers.FileLog.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\Loggers\FileLog.cs:line 19
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 81
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.ExecuteAsync(CancellationToken stoppingToken) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 63 
+05/04/2019 09:51:07 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 09:51:07 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 09:51:08 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 09:51:13 CosmosDBObserverFactory CreateObserver 
+05/04/2019 09:51:13 CosmosDBObserver OpenAsync.0 
+05/04/2019 09:51:13 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 09:51:13 CosmosDBObserver CloseAsync.ObserverError 
+05/04/2019 09:51:26 CosmosDBObserverFactory CreateObserver 
+05/04/2019 09:51:26 CosmosDBObserver OpenAsync.0 
+05/04/2019 09:51:26 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 09:51:26 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 10:18:27 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 10:18:27 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 10:18:28 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 10:18:32 CosmosDBObserverFactory CreateObserver 
+05/04/2019 10:18:32 CosmosDBObserver OpenAsync.0 
+05/04/2019 10:18:33 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 10:24:09 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 10:24:09 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 10:24:16 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 10:24:17 CosmosDBObserverFactory CreateObserver 
+05/04/2019 10:24:17 CosmosDBObserver OpenAsync.0 
+05/04/2019 10:24:17 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 10:32:22 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 10:32:22 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 10:34:47 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 10:34:47 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 10:34:48 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 10:34:48 CosmosDBObserverFactory CreateObserver 
+05/04/2019 10:34:48 CosmosDBObserver OpenAsync.0 
+05/04/2019 10:34:48 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 10:44:17 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 10:44:17 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 10:44:18 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 10:44:18 CosmosDBObserverFactory CreateObserver 
+05/04/2019 10:44:18 CosmosDBObserver OpenAsync.0 
+05/04/2019 10:44:18 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 10:47:37 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 10:47:37 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 10:47:38 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 10:47:39 CosmosDBObserverFactory CreateObserver 
+05/04/2019 10:47:39 CosmosDBObserver OpenAsync.0 
+05/04/2019 10:47:39 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 10:49:50 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 10:49:50 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 11:35:09 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 11:35:09 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 11:35:10 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 11:35:11 CosmosDBObserverFactory CreateObserver 
+05/04/2019 11:35:11 CosmosDBObserver OpenAsync.0 
+05/04/2019 11:35:11 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 12:02:11 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 12:02:11 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 12:02:12 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 12:02:13 CosmosDBObserverFactory CreateObserver 
+05/04/2019 12:02:13 CosmosDBObserver OpenAsync.0 
+05/04/2019 12:02:13 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 12:04:13 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 12:04:13 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 12:04:14 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 12:04:15 CosmosDBObserverFactory CreateObserver 
+05/04/2019 12:04:15 CosmosDBObserver OpenAsync.0 
+05/04/2019 12:04:15 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 12:04:15 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 12:04:16 CosmosDBHostedBackgroundService System.IO.IOException: The process cannot access the file 'D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\applog.txt' because it is being used by another process.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendAllText(String path, String contents)
+   at Ncs.Prototype.Web.Composition.Loggers.FileLog.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\Loggers\FileLog.cs:line 19
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 81
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.ExecuteAsync(CancellationToken stoppingToken) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 63 
+05/04/2019 12:08:56 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 12:08:56 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 12:08:57 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 12:08:58 CosmosDBObserverFactory CreateObserver 
+05/04/2019 12:08:58 CosmosDBObserver OpenAsync.0 
+05/04/2019 12:08:58 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 12:22:33 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 12:22:33 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 12:22:34 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 12:22:34 CosmosDBObserverFactory CreateObserver 
+05/04/2019 12:22:34 CosmosDBObserver OpenAsync.0 
+05/04/2019 12:22:34 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 12:36:05 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 12:36:06 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 12:36:07 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 12:36:08 CosmosDBObserverFactory CreateObserver 
+05/04/2019 12:36:08 CosmosDBObserver OpenAsync.0 
+05/04/2019 12:36:09 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 12:36:09 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 12:36:09 CosmosDBHostedBackgroundService System.IO.IOException: The process cannot access the file 'D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\applog.txt' because it is being used by another process.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendAllText(String path, String contents)
+   at Ncs.Prototype.Web.Composition.Loggers.FileLog.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\Loggers\FileLog.cs:line 19
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 81
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.ExecuteAsync(CancellationToken stoppingToken) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 63 
+05/04/2019 12:37:35 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 12:37:35 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 13:11:46 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 13:11:46 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 13:11:47 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 13:11:48 CosmosDBObserverFactory CreateObserver 
+05/04/2019 13:11:48 CosmosDBObserver OpenAsync.0 
+05/04/2019 13:11:48 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 13:13:45 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 13:13:45 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 13:13:48 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 13:13:55 CosmosDBObserverFactory CreateObserver 
+05/04/2019 13:13:55 CosmosDBObserver OpenAsync.0 
+05/04/2019 13:13:55 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 13:34:59 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 13:34:59 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 13:35:01 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 13:35:01 CosmosDBObserverFactory CreateObserver 
+05/04/2019 13:35:01 CosmosDBObserver OpenAsync.0 
+05/04/2019 13:35:01 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 13:35:01 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is SkillsHealthCheck 
+05/04/2019 13:35:02 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 13:46:23 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 13:46:23 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 13:46:24 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 13:46:25 CosmosDBObserverFactory CreateObserver 
+05/04/2019 13:46:25 CosmosDBObserver OpenAsync.0 
+05/04/2019 13:46:26 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 13:46:26 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is SkillsHealthCheck 
+05/04/2019 13:46:26 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 13:46:36 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 13:46:36 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 13:52:24 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 13:52:24 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 13:52:26 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 13:52:28 CosmosDBObserverFactory CreateObserver 
+05/04/2019 13:52:28 CosmosDBObserver OpenAsync.0 
+05/04/2019 13:52:29 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 13:52:40 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 13:52:40 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is ExploreCareers 
+05/04/2019 13:52:54 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 13:52:54 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 14:05:50 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 14:05:50 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 14:05:52 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 14:05:53 CosmosDBObserverFactory CreateObserver 
+05/04/2019 14:05:53 CosmosDBObserver OpenAsync.0 
+05/04/2019 14:05:53 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 14:08:17 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 14:08:17 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 14:08:19 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 14:08:20 CosmosDBObserverFactory CreateObserver 
+05/04/2019 14:08:20 CosmosDBObserver OpenAsync.0 
+05/04/2019 14:08:20 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 14:34:31 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 14:34:31 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 14:34:32 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 14:34:33 CosmosDBObserverFactory CreateObserver 
+05/04/2019 14:34:33 CosmosDBObserver OpenAsync.0 
+05/04/2019 14:34:33 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 14:35:42 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 14:35:42 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 14:36:47 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 14:36:47 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 14:37:40 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 14:37:40 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+05/04/2019 14:49:00 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 14:49:00 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 14:49:01 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 14:49:02 CosmosDBObserverFactory CreateObserver 
+05/04/2019 14:49:02 CosmosDBObserver OpenAsync.0 
+05/04/2019 14:49:03 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 15:02:00 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 15:02:00 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 15:02:02 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 15:02:03 CosmosDBObserverFactory CreateObserver 
+05/04/2019 15:02:03 CosmosDBObserver OpenAsync.0 
+05/04/2019 15:02:03 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 15:26:28 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 15:26:28 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 15:26:29 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 15:26:30 CosmosDBObserverFactory CreateObserver 
+05/04/2019 15:26:30 CosmosDBObserver OpenAsync.0 
+05/04/2019 15:26:30 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 15:42:04 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 15:42:04 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 15:42:06 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 15:42:06 CosmosDBObserverFactory CreateObserver 
+05/04/2019 15:42:06 CosmosDBObserver OpenAsync.0 
+05/04/2019 15:42:06 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 15:47:23 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 15:47:23 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 15:47:25 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 15:47:25 CosmosDBObserverFactory CreateObserver 
+05/04/2019 15:47:25 CosmosDBObserver OpenAsync.0 
+05/04/2019 15:47:25 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 15:51:45 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 15:51:45 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 15:51:47 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 15:51:47 CosmosDBObserverFactory CreateObserver 
+05/04/2019 15:51:47 CosmosDBObserver OpenAsync.0 
+05/04/2019 15:51:47 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 15:56:07 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 15:56:07 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 15:59:45 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 15:59:45 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 15:59:56 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 15:59:57 CosmosDBObserverFactory CreateObserver 
+05/04/2019 15:59:57 CosmosDBObserver OpenAsync.0 
+05/04/2019 15:59:57 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 16:03:31 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 16:03:31 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 16:03:33 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 16:03:34 CosmosDBObserverFactory CreateObserver 
+05/04/2019 16:03:34 CosmosDBObserver OpenAsync.0 
+05/04/2019 16:03:34 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 16:03:34 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Composite 
+05/04/2019 16:03:34 CosmosDBHostedBackgroundService after StartAsync 
+05/04/2019 16:08:54 CosmosDBHostedBackgroundService Constructor 
+05/04/2019 16:08:54 CosmosDBHostedBackgroundService ExecuteAsync 
+05/04/2019 16:08:55 CosmosDBHostedBackgroundService before StartAsync 
+05/04/2019 16:08:55 CosmosDBObserverFactory CreateObserver 
+05/04/2019 16:08:55 CosmosDBObserver OpenAsync.0 
+05/04/2019 16:08:55 CosmosDBObserver ProcessChangesAsync 
+05/04/2019 16:08:56 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Composite 
+05/04/2019 16:08:56 CosmosDBHostedBackgroundService System.IO.IOException: The process cannot access the file 'D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\applog.txt' because it is being used by another process.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendAllText(String path, String contents)
+   at Ncs.Prototype.Web.Composition.Loggers.FileLog.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\Loggers\FileLog.cs:line 19
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 81
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.ExecuteAsync(CancellationToken stoppingToken) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 63 
+08/04/2019 08:46:51 CosmosDBHostedBackgroundService Constructor 
+08/04/2019 08:46:51 CosmosDBHostedBackgroundService ExecuteAsync 
+08/04/2019 08:46:53 CosmosDBHostedBackgroundService before StartAsync 
+08/04/2019 08:46:54 CosmosDBObserverFactory CreateObserver 
+08/04/2019 08:46:54 CosmosDBObserver OpenAsync.0 
+08/04/2019 08:46:54 CosmosDBObserver ProcessChangesAsync 
+08/04/2019 08:46:54 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Composite 
+08/04/2019 08:46:54 CosmosDBHostedBackgroundService after StartAsync 
+08/04/2019 09:48:34 CosmosDBHostedBackgroundService Constructor 
+08/04/2019 09:48:34 CosmosDBHostedBackgroundService ExecuteAsync 
+08/04/2019 09:48:43 CosmosDBHostedBackgroundService before StartAsync 
+08/04/2019 09:48:44 CosmosDBObserverFactory CreateObserver 
+08/04/2019 09:48:44 CosmosDBObserver OpenAsync.0 
+08/04/2019 09:48:44 CosmosDBHostedBackgroundService after StartAsync 
+08/04/2019 09:48:45 CosmosDBObserver CloseAsync.ObserverError 
+08/04/2019 09:49:00 CosmosDBObserverFactory CreateObserver 
+08/04/2019 09:49:00 CosmosDBObserver OpenAsync.0 
+08/04/2019 09:49:00 CosmosDBObserver ProcessChangesAsync 
+08/04/2019 09:49:00 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Composite 
+08/04/2019 09:54:54 CosmosDBHostedBackgroundService Constructor 
+08/04/2019 09:54:54 CosmosDBHostedBackgroundService ExecuteAsync 
+08/04/2019 09:55:00 CosmosDBHostedBackgroundService before StartAsync 
+08/04/2019 09:55:02 CosmosDBObserverFactory CreateObserver 
+08/04/2019 09:55:03 CosmosDBObserver OpenAsync.0 
+08/04/2019 09:55:03 CosmosDBHostedBackgroundService after StartAsync 
+08/04/2019 09:55:03 CosmosDBObserver ProcessChangesAsync 
+08/04/2019 09:55:03 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Composite 
+08/04/2019 10:06:45 CosmosDBHostedBackgroundService Constructor 
+08/04/2019 10:06:45 CosmosDBHostedBackgroundService ExecuteAsync 
+08/04/2019 10:06:48 CosmosDBHostedBackgroundService before StartAsync 
+08/04/2019 10:07:25 CosmosDBObserverFactory CreateObserver 
+08/04/2019 10:07:25 CosmosDBObserver OpenAsync.0 
+08/04/2019 10:07:25 CosmosDBObserver ProcessChangesAsync 
+08/04/2019 10:07:25 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Composite 
+08/04/2019 10:07:25 CosmosDBHostedBackgroundService System.IO.IOException: The process cannot access the file 'D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\applog.txt' because it is being used by another process.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendAllText(String path, String contents)
+   at Ncs.Prototype.Web.Composition.Loggers.FileLog.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\Loggers\FileLog.cs:line 19
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 81
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.ExecuteAsync(CancellationToken stoppingToken) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 63 
+08/04/2019 10:09:55 CosmosDBHostedBackgroundService Constructor 
+08/04/2019 10:09:55 CosmosDBHostedBackgroundService ExecuteAsync 
+08/04/2019 10:09:56 CosmosDBHostedBackgroundService before StartAsync 
+08/04/2019 10:09:56 CosmosDBObserverFactory CreateObserver 
+08/04/2019 10:09:56 CosmosDBObserver OpenAsync.0 
+08/04/2019 10:09:57 CosmosDBHostedBackgroundService after StartAsync 
+08/04/2019 10:09:57 CosmosDBObserver ProcessChangesAsync 
+08/04/2019 10:09:57 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Composite 
+08/04/2019 10:22:36 CosmosDBHostedBackgroundService Constructor 
+08/04/2019 10:22:36 CosmosDBHostedBackgroundService ExecuteAsync 
+08/04/2019 10:22:37 CosmosDBHostedBackgroundService before StartAsync 
+08/04/2019 10:22:38 CosmosDBObserverFactory CreateObserver 
+08/04/2019 10:22:38 CosmosDBObserver OpenAsync.0 
+08/04/2019 10:22:38 CosmosDBObserver ProcessChangesAsync 
+08/04/2019 10:22:38 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Composite 
+08/04/2019 10:22:39 CosmosDBHostedBackgroundService System.IO.IOException: The process cannot access the file 'D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\applog.txt' because it is being used by another process.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendAllText(String path, String contents)
+   at Ncs.Prototype.Web.Composition.Loggers.FileLog.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\Loggers\FileLog.cs:line 19
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 81
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.ExecuteAsync(CancellationToken stoppingToken) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 63 
+08/04/2019 10:30:36 CosmosDBHostedBackgroundService Constructor 
+08/04/2019 10:30:36 CosmosDBHostedBackgroundService ExecuteAsync 
+08/04/2019 10:30:37 CosmosDBHostedBackgroundService before StartAsync 
+08/04/2019 10:30:39 CosmosDBObserverFactory CreateObserver 
+08/04/2019 10:30:39 CosmosDBObserver OpenAsync.0 
+08/04/2019 10:30:39 CosmosDBObserver ProcessChangesAsync 
+08/04/2019 10:30:39 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Composite 
+08/04/2019 10:30:39 CosmosDBHostedBackgroundService after StartAsync 
+08/04/2019 10:44:42 CosmosDBObserver ProcessChangesAsync 
+08/04/2019 10:44:42 CosmosDBObserver ProcessChangesAsync for 2 documents. Id of first is SkillsHealthCheck 
+08/04/2019 10:49:31 CosmosDBHostedBackgroundService Constructor 
+08/04/2019 10:49:32 CosmosDBHostedBackgroundService ExecuteAsync 
+08/04/2019 10:49:34 CosmosDBHostedBackgroundService before StartAsync 
+08/04/2019 10:49:35 CosmosDBObserverFactory CreateObserver 
+08/04/2019 10:49:35 CosmosDBObserver OpenAsync.0 
+08/04/2019 10:49:35 CosmosDBHostedBackgroundService after StartAsync 
+08/04/2019 10:49:35 CosmosDBObserver ProcessChangesAsync 
+08/04/2019 10:49:35 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Composite 
+08/04/2019 10:55:07 CosmosDBHostedBackgroundService Constructor 
+08/04/2019 10:55:07 CosmosDBHostedBackgroundService ExecuteAsync 
+08/04/2019 10:55:09 CosmosDBHostedBackgroundService before StartAsync 
+08/04/2019 10:55:10 CosmosDBObserverFactory CreateObserver 
+08/04/2019 10:55:10 CosmosDBObserver OpenAsync.0 
+08/04/2019 10:55:10 CosmosDBObserver ProcessChangesAsync 
+08/04/2019 10:55:10 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Composite 
+08/04/2019 10:55:10 CosmosDBHostedBackgroundService after StartAsync 
+08/04/2019 11:03:15 CosmosDBHostedBackgroundService Constructor 
+08/04/2019 11:03:15 CosmosDBHostedBackgroundService ExecuteAsync 
+08/04/2019 11:03:17 CosmosDBHostedBackgroundService before StartAsync 
+08/04/2019 11:03:17 CosmosDBObserverFactory CreateObserver 
+08/04/2019 11:03:17 CosmosDBObserver OpenAsync.0 
+08/04/2019 11:03:17 CosmosDBObserver ProcessChangesAsync 
+08/04/2019 11:03:17 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Composite 
+08/04/2019 11:03:18 CosmosDBHostedBackgroundService System.IO.IOException: The process cannot access the file 'D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\applog.txt' because it is being used by another process.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendAllText(String path, String contents)
+   at Ncs.Prototype.Web.Composition.Loggers.FileLog.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\Loggers\FileLog.cs:line 19
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 81
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.ExecuteAsync(CancellationToken stoppingToken) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 63 
+08/04/2019 11:17:04 CosmosDBHostedBackgroundService Constructor 
+08/04/2019 11:17:04 CosmosDBHostedBackgroundService ExecuteAsync 
+08/04/2019 11:17:05 CosmosDBHostedBackgroundService before StartAsync 
+08/04/2019 11:17:28 CosmosDBObserverFactory CreateObserver 
+08/04/2019 11:17:28 CosmosDBObserver OpenAsync.0 
+08/04/2019 11:17:28 CosmosDBHostedBackgroundService after StartAsync 
+08/04/2019 11:17:29 CosmosDBObserver CloseAsync.ObserverError 
+08/04/2019 11:17:54 CosmosDBObserverFactory CreateObserver 
+08/04/2019 11:17:54 CosmosDBObserver OpenAsync.0 
+08/04/2019 11:17:54 CosmosDBObserver ProcessChangesAsync 
+08/04/2019 11:17:54 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Composite 
+08/04/2019 11:34:07 CosmosDBHostedBackgroundService Constructor 
+08/04/2019 11:34:07 CosmosDBHostedBackgroundService ExecuteAsync 
+08/04/2019 11:34:10 CosmosDBHostedBackgroundService before StartAsync 
+08/04/2019 11:34:11 CosmosDBObserverFactory CreateObserver 
+08/04/2019 11:34:11 CosmosDBObserver OpenAsync.0 
+08/04/2019 11:34:11 CosmosDBObserver ProcessChangesAsync 
+08/04/2019 11:34:11 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Composite 
+08/04/2019 11:34:12 CosmosDBHostedBackgroundService System.IO.IOException: The process cannot access the file 'D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\applog.txt' because it is being used by another process.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendAllText(String path, String contents)
+   at Ncs.Prototype.Web.Composition.Loggers.FileLog.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\Loggers\FileLog.cs:line 19
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 81
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.ExecuteAsync(CancellationToken stoppingToken) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 63 
+08/04/2019 11:36:13 CosmosDBHostedBackgroundService Constructor 
+08/04/2019 11:36:13 CosmosDBHostedBackgroundService ExecuteAsync 
+08/04/2019 11:36:14 CosmosDBHostedBackgroundService before StartAsync 
+08/04/2019 11:36:19 CosmosDBObserverFactory CreateObserver 
+08/04/2019 11:36:19 CosmosDBObserver OpenAsync.0 
+08/04/2019 11:36:21 CosmosDBObserver ProcessChangesAsync 
+08/04/2019 11:36:21 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Composite 
+08/04/2019 11:36:21 CosmosDBHostedBackgroundService after StartAsync 
+08/04/2019 12:02:42 CosmosDBHostedBackgroundService Constructor 
+08/04/2019 12:02:42 CosmosDBHostedBackgroundService ExecuteAsync 
+08/04/2019 12:02:45 CosmosDBHostedBackgroundService before StartAsync 
+08/04/2019 12:02:46 CosmosDBObserverFactory CreateObserver 
+08/04/2019 12:02:46 CosmosDBObserver OpenAsync.0 
+08/04/2019 12:02:46 CosmosDBHostedBackgroundService after StartAsync 
+08/04/2019 12:02:47 CosmosDBObserver CloseAsync.ObserverError 
+08/04/2019 12:03:00 CosmosDBObserverFactory CreateObserver 
+08/04/2019 12:03:00 CosmosDBObserver OpenAsync.0 
+08/04/2019 12:03:00 CosmosDBObserver ProcessChangesAsync 
+08/04/2019 12:03:00 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Composite 
+08/04/2019 12:08:20 CosmosDBHostedBackgroundService Constructor 
+08/04/2019 12:08:20 CosmosDBHostedBackgroundService ExecuteAsync 
+08/04/2019 12:08:23 CosmosDBHostedBackgroundService before StartAsync 
+08/04/2019 12:08:24 CosmosDBObserverFactory CreateObserver 
+08/04/2019 12:08:24 CosmosDBObserver OpenAsync.0 
+08/04/2019 12:08:24 CosmosDBObserver ProcessChangesAsync 
+08/04/2019 12:08:24 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Composite 
+08/04/2019 12:08:24 CosmosDBHostedBackgroundService after StartAsync 
+08/04/2019 12:20:34 CosmosDBHostedBackgroundService Constructor 
+08/04/2019 12:20:34 CosmosDBHostedBackgroundService ExecuteAsync 
+08/04/2019 12:20:36 CosmosDBHostedBackgroundService before StartAsync 
+08/04/2019 12:20:37 CosmosDBObserverFactory CreateObserver 
+08/04/2019 12:20:37 CosmosDBObserver OpenAsync.0 
+08/04/2019 12:20:37 CosmosDBObserver ProcessChangesAsync 
+08/04/2019 12:20:37 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Composite 
+08/04/2019 12:20:40 CosmosDBHostedBackgroundService System.IO.IOException: The process cannot access the file 'D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\applog.txt' because it is being used by another process.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendAllText(String path, String contents)
+   at Ncs.Prototype.Web.Composition.Loggers.FileLog.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\Loggers\FileLog.cs:line 19
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 81
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.ExecuteAsync(CancellationToken stoppingToken) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 63 
+08/04/2019 14:49:28 CosmosDBHostedBackgroundService Constructor 
+08/04/2019 14:49:28 CosmosDBHostedBackgroundService ExecuteAsync 
+08/04/2019 14:49:30 CosmosDBHostedBackgroundService before StartAsync 
+08/04/2019 14:49:31 CosmosDBObserverFactory CreateObserver 
+08/04/2019 14:49:31 CosmosDBObserver OpenAsync.0 
+08/04/2019 14:49:31 CosmosDBObserver ProcessChangesAsync 
+08/04/2019 14:49:31 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Composite 
+08/04/2019 14:49:32 CosmosDBHostedBackgroundService System.IO.IOException: The process cannot access the file 'D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\applog.txt' because it is being used by another process.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendAllText(String path, String contents)
+   at Ncs.Prototype.Web.Composition.Loggers.FileLog.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\Loggers\FileLog.cs:line 19
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 81
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.ExecuteAsync(CancellationToken stoppingToken) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 63 
+08/04/2019 14:51:55 CosmosDBHostedBackgroundService Constructor 
+08/04/2019 14:51:55 CosmosDBHostedBackgroundService ExecuteAsync 
+08/04/2019 14:52:00 CosmosDBHostedBackgroundService before StartAsync 
+08/04/2019 14:52:01 CosmosDBObserverFactory CreateObserver 
+08/04/2019 14:52:01 CosmosDBObserver OpenAsync.0 
+08/04/2019 14:52:01 CosmosDBHostedBackgroundService after StartAsync 
+08/04/2019 14:56:02 CosmosDBObserver ProcessChangesAsync 
+08/04/2019 14:56:02 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Courses 
+08/04/2019 16:35:10 CosmosDBHostedBackgroundService Constructor 
+08/04/2019 16:35:10 CosmosDBHostedBackgroundService ExecuteAsync 
+08/04/2019 16:35:15 CosmosDBHostedBackgroundService before StartAsync 
+08/04/2019 16:35:16 CosmosDBObserverFactory CreateObserver 
+08/04/2019 16:35:16 CosmosDBObserver OpenAsync.0 
+08/04/2019 16:35:16 CosmosDBObserver ProcessChangesAsync 
+08/04/2019 16:35:16 CosmosDBObserver ProcessChangesAsync for 1 documents. Id of first is Composite 
+08/04/2019 16:35:16 CosmosDBHostedBackgroundService System.IO.IOException: The process cannot access the file 'D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\applog.txt' because it is being used by another process.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendAllText(String path, String contents)
+   at Ncs.Prototype.Web.Composition.Loggers.FileLog.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\Loggers\FileLog.cs:line 19
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.Log(String data) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 81
+   at Ncs.Prototype.Web.Composition.ChangeFeedServices.CosmosDBHostedBackgroundService.ExecuteAsync(CancellationToken stoppingToken) in D:\Source\Repos\SkillsFundingAgency\dfc-composite-ui-spike\Ncs.Prototype.Web.Composition\ChangeFeedServices\CosmosDBHostedBackgroundService.cs:line 63 

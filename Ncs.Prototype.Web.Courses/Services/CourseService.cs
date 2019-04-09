@@ -109,12 +109,12 @@ namespace Ncs.Prototype.Web.Courses.Services
 
             if (!string.IsNullOrEmpty(city))
             {
-                results = results.Where(x => x.City == city).ToList();
+                results = results.Where(x => string.Compare(x.City, city, true) == 0).ToList();
             }
 
             if (!string.IsNullOrEmpty(category))
             {
-                results = results.Where(x => x.Category == category).ToList();
+                results = results.Where(x => string.Compare(x.Category, category, true) == 0).ToList();
             }
 
             if (filterThisMonth)
@@ -131,15 +131,31 @@ namespace Ncs.Prototype.Web.Courses.Services
 
             if (!string.IsNullOrEmpty(searchClue))
             {
-                results = results.Where(x => x.Description.IndexOf(searchClue,StringComparison.InvariantCultureIgnoreCase) >= 0).ToList();
+                results = results.Where(x => x.Description.IndexOf(searchClue, StringComparison.InvariantCultureIgnoreCase) >= 0).ToList();
             }
-                       
+
             return results;
         }
 
         public Course GetCourse(int id)
         {
             return _courses.FirstOrDefault(x => x.Id == id);
+        }
+
+        public List<Category> GetCategories()
+        {
+            var courses = GetCourses();
+            var categories = courses.GroupBy(g => g.Category)
+                                    .Select(s => new Data.Category()
+                                    {
+                                        Name = s.Key,
+                                        CourseCount = s.Count()
+                                    }
+                                    )
+                                    .OrderBy(o => o.Name)
+                                    .ToList();
+
+            return categories;
         }
     }
 }

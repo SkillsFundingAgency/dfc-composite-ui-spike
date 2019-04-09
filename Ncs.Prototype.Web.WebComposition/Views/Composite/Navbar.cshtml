@@ -23,11 +23,11 @@
                     <li class="govuk-tabs__list-item">
                         @if (application.RequiresAuthorization)
                         {
-                            <a class="govuk-tabs__tab" asp-area="" asp-controller="Authorized" asp-action="Index" asp-route-routeName="@application.RouteName">@application.MainMenuText</a>
+                            <a class="govuk-tabs__tab" href="~/Authorized/Composite/@application.RouteName">@application.MainMenuText</a>
                         }
                         else
                         {
-                            <a class="govuk-tabs__tab" asp-area="" asp-controller="Application" asp-action="Index" asp-route-routeName="@application.RouteName">@application.MainMenuText</a>
+                            <a class="govuk-tabs__tab" href="~/Composite/@application.RouteName">@application.MainMenuText</a>
                         }
                     </li>
                 }

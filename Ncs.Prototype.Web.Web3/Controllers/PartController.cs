@@ -3,6 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
+using Ncs.Prototype.Common;
 using Ncs.Prototype.Web.Web3.Services;
 
 namespace Ncs.Prototype.Web.Web3.Controllers
@@ -19,7 +20,7 @@ namespace Ncs.Prototype.Web.Web3.Controllers
         [HttpGet]
         public async System.Threading.Tasks.Task<IActionResult> Index()
         {
-            _PartService.BearerToken = (User.Identity.IsAuthenticated ? await HttpContext.GetTokenAsync("id_token") : null);
+            _PartService.BearerToken = await GetBearerTokenAsync();
 
             if (User.Identity.IsAuthenticated && string.IsNullOrEmpty(_PartService.BearerToken))
             {
@@ -67,6 +68,11 @@ namespace Ncs.Prototype.Web.Web3.Controllers
             }
 
             return View(vm);
+        }
+
+        private async Task<string> GetBearerTokenAsync()
+        {
+            return User.Identity.IsAuthenticated ? await HttpContext.GetTokenAsync(Constants.BearerTokenName) : null;
         }
     }
 }
