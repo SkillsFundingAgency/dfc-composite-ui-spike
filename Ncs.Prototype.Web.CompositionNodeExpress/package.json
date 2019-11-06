@@ -10,7 +10,7 @@
     "name": ""
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "body-parser": "^1.15.0",
     "cookie-parser": "^1.4.0",
     "cookie-session": "^1.3.3",
